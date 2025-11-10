@@ -1,0 +1,10 @@
+# Hack for windows user
+
+# Create custom iso 
+- LTlite (paid) graphical user interface
+-Msmg (free)    terminal based
+
+# Virtualization
+- virtualbox to test os in virtual machine 
+
+NOTE:[you can remmove defender edge etc and what not that improve performance]

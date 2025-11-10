@@ -1,0 +1,87 @@
+# Cpp Development enviroment 
+
+# Browser
+- Download Zen browser 
+- Add uBlock extension 
+- right click > yt shorts > remove
+
+# Code editor 
+- winget install vim 
+- vim $PROFILE 
+   function vim { & "C:\Program Files\Vim\vim91\vim.exe" $args }
+- C:\Users\Admin\.vimrc  [ configuration file for vim]
+  
+# Compiler  (mingw64) 
+- github > mingw build binaries > releases
+- download mingw (x86_64/posix/seh/ucrt)
+- extract in C:\mingw64
+- add path to env variables -> C:\mingw64\bin
+ [win+R > sysdm.cpl > advance > env variables > sys variables ]
+or $ setx /M PATH "%PATH%;C:\mingw64\bin"
+
+# Terminal 
+For windows 
+1. Command Prompt - for backward compability 
+2. Windows Powershell - more feature than cmd prompt 
+3. Terminal - pre install uses powershell 
+
+- Wezterm (terminal alternative) - set powershell as default prog
+- C:\Users\Admin\.wezterm.lua [ configuration file for wezterm]
+
+For linux 
+1. Shell (bash / zsh )
+2. Wezterm 
+
+- download zsh shell more modern 
+- download Wezterm 
+- vim ~/.wezterm.lua [and set shell to zsh]
+
+# GIT
+- Install git 
+ - winget install Git.Git [windows]
+- Login github on browser 
+- Saves at C:\User\Admin\.gitconfig 
+  $ git config --global user.name "Your Name"
+  $ git config --global user.email "your.email@example.com"
+  $ git config --global init.defaultBranch main
+  $ git config --global core.editor "vim"
+- set ssh keys 
+  $ ssh-keygen -t ed25519 -C "your.email@example.com"
+- copy the ssh keys 
+  $ cat ~/.ssh/id_ed25519.pub
+  Copy the entire output (starts with ssh-ed25519 or ssh-rsa)
+- Browser > github > settings > ssh and gpg keys > new ssh keys > paste ur key 
+- Exit
+  $ ssh -T git@github.com
+
+- OPtional
+git config --global color.ui auto
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global push.default simple
+git config --global pull.rebase true
+
+    SSH keys: C:\Users\YourName\.ssh\
+    Git config: C:\Users\YourName\.gitconfig
+
+- Windows 
+  - Git for Windows installs SSH components that work in any terminal
+    SSH authentication is handled automatically
+  - Check in Git bash 
+    - windows powershell > use git bash (above +)
+    - $ eval "$(ssh-agent -s)"
+
+- Linux 
+  - vim ~/.bashrc or ~/.zshrc
+  - $ eval "$(ssh-agent -s)" {paste this in the .file}
+
+- Optional  (git bash/zsh/bash)
+ Only needed if:
+  $ ssh-add -l  # Returns "The agent has no identities"
+# Then add your key:
+  $ ssh-add ~/.ssh/id_ed25519
+
+# Tmux 
+  - install tmux 

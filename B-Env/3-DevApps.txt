@@ -1,0 +1,27 @@
+# After setting the OS 
+
+DEV APPS-
+- Browser (Zen browser)
+- Code Editor (vim) 
+- Terminal 
+    - wezterm (windows/linux/mac)
+    - ghostty (linux and mac)
+- GIT 
+- Tmux 
+- Unzipper (winrar/7zip)
+- uTorrent 
+
+# Windows 
+- GlazeWM 
+- Everthing by void (better search)
+- Oracal Virtual Box 
+- Ntlight  (creating custom iso)
+
+# Sharing ur stuff
+- OBS (really helpful for sharing)
+- DAVINCI RESOLVE 
+- PHOTOSHOP
+- DISCORD
+
+# 3d stuff 
+- Blender 

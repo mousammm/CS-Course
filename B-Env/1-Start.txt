@@ -1,0 +1,15 @@
+Here I will discuss all the tools that i use as a dev 
+
+# 1 Operating System 
+
+Windows 
+- use if u want to create games opengl/vulkan
+
+Linux 
+-good for everything beside for gamedev i would choose windows 
+-Not compromise u have to learn! 
+
+MacOS 
+- Never use!
+
+
