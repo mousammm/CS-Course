@@ -1,0 +1,63 @@
+# Random Access Memory (RAM)
+- RAM a type of computer memory that stores data temporarily. 
+- When you turn off your computer, the data in RAM disappears
+
+# What is a Computer Memory?
+- Computer memory is essential for storing data and instructions. It is divided into cells, each with a unique address. 
+- it has different types of memory (short-term, long-term, etc.). 
+
+    - Cache Memory: High-speed memory that speeds up the CPU. It’s fast but expensive.
+    - Primary Memory (Main Memory): Includes RAM (volatile) and ROM (non-volatile). It stores current data.
+    - Secondary Memory: Non-volatile memory used for permanent storage (e.g., hard drives, SSDs).
+
+# RAM 
+- computer's data is temporarily stored in RAM.
+- As the name says, RAM can help in both reading and writing. 
+- RAM is a volatile memory, which means, it is present as long as the Computer is in the ON state, as soon as the computer turns OFF, the memory is erased.
+
+- RAM is made up of small transistors and capacitors that store electrical charges representing data bits. Here’s how it works:
+    - Data Storage: RAM temporarily stores data needed by the CPU.
+    - Volatility: Data is lost when the power is turned off, so it’s important to save work to permanent storage (e.g., hard drive or SSD).
+    - Speed: RAM is much faster than secondary storage, allowing quick access to data.
+
+- computer needs to load data from the hard drive into RAM. RAM temporarily stores this data so the CPU can access it quickly and process it. The CPU uses this memory to carry out the tasks needed to give you a smooth experience.
+- RAM needs to be fast because it’s quicker than other storage devices like the hard drive. The speed of your RAM determines how quickly the data flows in and out of the CPU. If your RAM is slow, the CPU will take longer to process the data, making everything feel slower.
+- Think of RAM as your short-term memory. It stores the information you need right now, like remembering what’s on your shopping list. If you forget things, you can't continue your tasks efficiently. But if you have more short-term memory, you can juggle more tasks at once and handle harder activities.
+- The larger your RAM capacity, the faster your CPU can complete tasks, and the smoother your experience will be. Having more RAM allows you to open bigger files and use demanding programs like video editing software more easily.
+
+
+ of RAM
+
+
+
+# RAM is further divided into two types, SRAM - Static Random Access Memory and DRAM- Dynamic Random Access Memory. 
+
+1. SRAM (Static Random Access memory)
+SRAM is used for Cache memory, it can hold the data as long as the power availability is there. It is refreshed simultaneously to store the present information. It is made with CMOS technology. It contains 4 to 6 transistors and it also uses clocks. It does not require a periodic refresh cycle due to the presence of transistors. Although SRAM is faster, it requires more power and is more expensive. Since SRAM requires more power, more heat is lost here as well, another drawback of SRAM is that it can not store more bits per chip, for instance, for the same amount of memory stored in DRAM, SRAM would require one more chip.
+
+Function of SRAM
+    - SRAM is used as the Cache memory inside the computer.
+    - SRAM is known to be the fastest among all memories.
+    - SRAM is costlier.
+    - SRAM has a lower density (number of memory cells per unit area).
+    - The power consumption of SRAM is less but when it is operated at higher frequencies, the power consumption of SRAM is compatible with DRAM.
+
+2. DRAM (Dynamic Random Access memory)
+- DRAM is used for the Main memory, it has a different construction than SRAM, it uses one transistor and one capacitor (also known as a conductor), which is needed to get recharged in milliseconds due to the presence of the capacitor. Dynamic RAM was the first sold memory integrated circuit. DRAM is the second most compact technology in production (the First is Flash Memory). DRAM has one transistor and one capacitor in 1 memory bit. Although DRAM is slower, it can store more bits per chip, for instance, for the same amount of memory stored in SRAM, DRAM requires one less chip. DRAM requires less power and hence, less heat is produced. 
+
+Function of DRAM
+- The function of DRAM is that it is used for programming code by a computer processor to function. It is used in our PCs (Personal Computers).
+
+Characteristics of DRAM
+    - DRAM is used as the Main Memory inside the computer.
+    - DRAM is known to be a fast memory but not as fast as SRAM.
+    - DRAM is cheaper as compared to SRAM.
+    - DRAM has a higher density (number of memory cells per unit area)
+    - The power consumption by DRAM is more
+
+Types of DRAM
+    - SDRAM: Synchronous DRAM, increases performance through its pins, which sync up with the data connection between the main memory and the microprocessor. 
+    - DDR SDRAM: (Double Data Rate) It has features of SDRAM also but with double speed. 
+    - ECC DRAM: (Error Correcting Code) This RAM can find corrupted data easily and sometimes can fix it.
+    - RDRAM: It stands for Rambus DRAM. It used to be popular in the late 1990s and early 2000s. It was developed by a company named Rambus Inc. At that time it competed with SDRAM. Its latency was higher at the beginning but it was more stable than SDRAM, consoles like Nintendo 64 and Sony Play Station 2 used that.
+    - DDR2, DDR3, AND DDR4: These are successor versions of DDR SDRAM with upgrades in performance

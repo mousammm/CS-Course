@@ -1,0 +1,37 @@
+# What is Motherboard?
+- It is also called the main circuit board or mainboard. 
+- It allows communication between the RAM, ROM, hard drive, and other computer hardware components. 
+
+    - It supports a single type of CPU along with different types of memory.
+    - It is also responsible for compatible power supplies and allows everything works correctly together.
+    - Other devices like a sound card, graphics card, network card, different adapters, and peripherals are also compatible with motherboard. If they are not, then they will not work properly.
+
+# Component of motherboard 
+1. Heat Sink: A heat sink is used to maintain the required temperature of the processor and other components to work properly because most of the components are made with semiconductor material. We know that semiconductor material varies their resistant as changes in temperature. As usual heat sink made using aluminum and copper alloy. There are two types of heat sinks available: active heat sinks and passive heat sinks.
+
+2. Parallel Port: A parallel port was used for old printers. It has a 25-pin female DB connector. These multiple ports were used to send and receive data collection in a single go. 
+
+3. Capacitor: A capacitor is a two-terminal electrical device that is used to store energy electrostatically in an electric field. It is also known as condensers. 
+
+4. Back Panel Connectors: Like its name, it is the back portion of the motherboard that allows connecting peripherals such as to monitor, keyboard, mouse, speakers, etc. 
+
+5. Northbridge: It is an integrated circuit that is directly connected to the memory, AGP (Accelerated Graphics Port), and CPU interface. This integrated circuit has a chipset that is responsible for connected components with it. Or in other words, northbridge is used to providing a communication channel between the CPU and the external devices.
+
+6. Southbridge: It is also an IC on the motherboard, used as an I/O controller, and hard drive controller. 
+
+7. Jumpers: Jumpers are small metal connectors to close off an electrical circuit. It is used to flow electricity to some regions of the circuit board.  
+8. Integrated Circuit: The integrated circuit is a small chip that is used as an amplifier, timer, oscillator, and it is also used in computer memory. 
+
+9. PCI Slot: PCI Slot stands for peripheral component interface slot. It is used to add internal components to a desktop computer. 
+
+10. Memory Slot: A memory slot is used to insert RAM into a computer system. Usually, a motherboard consists of two or four memory slots.
+
+11. USB Headers: It is a collection of pins that are used to connect additional USB ports to the computer. 
+
+12. Super I/O: It is also an integrated circuit that is used on the mothers of PC.
+
+13. Serial Port Connector: It is an interface to receive or transmit one-bit data on a computer system. 
+
+14. Serial ATA Connections: The serial ATA was introduced to replacement of parallel ATA. It can provide 1.5Gbps of performance to every drive. 
+
+15. System Panel Connectors: It is also known as panel connectors that are used to control the power button, reset button, lock button, and case speaker of a computer system. 

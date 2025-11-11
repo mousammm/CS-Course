@@ -1,0 +1,45 @@
+# Computer Memory Communicates With the CPU ?
+- Computer memory communicates with the CPU through a structured system of electronic pathways and controllers, enabling the CPU to fetch and store data rapidly and efficiently. Here’s a detailed breakdown:
+
+    - System Bus Structure:
+    The main channel for communication between the CPU and memory is the system bus, which is a collection of three types of buses:
+        * Data Bus: Transfers the actual data between CPU and memory.
+        * Address Bus: Carries the memory address that specifies where data should be read from or written to.
+        * Control Bus: Sends signals that coordinate and control the activity, such as indicating read or write operations.
+
+    - Memory Controller:
+    Communication is orchestrated by a memory controller, which manages the flow of data and ensures that signals between the CPU and memory are synchronized. In older systems, this controller was located on the motherboard; in modern computers, it’s typically integrated into the CPU for greater speed and efficiency
+
+# Communication Process:
+    - When the CPU needs to access data or instructions in memory, it places the address of the required memory location on the address bus.
+    - The CPU sends a control signal (read or write command) on the control bus.
+    - If reading, the memory controller retrieves the data from the specified address and sends it back to the CPU via the data bus. If writing, the CPU sends data over the data bus to be stored at the designated memory location.
+    - This process is repeated billions of times per second during computing operations, forming the backbone of the fetch-decode-execute cycle used to run programs
+
+
+# Types of Computer Memory
+
+    Primary memory
+      - RAM
+        * S RAM
+        * D RAM
+      - ROM
+        * MROM(Masked ROM)
+        * PROM (Programmable Read Only Memory)
+        * EPROM (Erasable Programmable Read Only Memory)
+        * EEPROM (Electrically Erasable Programmable Read Only Memory)
+
+    Secondary memory
+      - Magnetic tape
+      - Magnetic disks
+      - Optical Disks
+        * CD - ROM
+        * WORM-(WRITE ONCE READ MANY)
+        * DVD's
+
+    Cache memory: Cache Memory is a type of high-speed semiconductor memory that can help the CPU run faster. Between the CPU and the main memory, it serves as a buffer. It is used to store the data and programs that the CPU uses the most frequently.
+
+Types of Cache Memory
+    - L1 or Level 1 Cache: It is the first level of cache memory that is present inside the processor. It is present in a small amount inside every core of the processor separately. The size of this memory ranges from 2KB to 64 KB.
+    - L2 or Level 2 Cache: It is the second level of cache memory that may present inside or outside the CPU. If not present inside the core, It can be shared between two cores depending upon the architecture and is connected to a processor with the high-speed bus. The size of memory ranges from 256 KB to 512 KB.
+    - L3 or Level 3 Cache: It is the third level of cache memory that is present outside the CPU and is shared by all the cores of the CPU. Some high processors may have this cache. This cache is used to increase the performance of the L2 and L1 cache. The size of this memory ranges from 1 MB to 8MB.

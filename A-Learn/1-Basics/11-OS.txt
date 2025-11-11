@@ -1,0 +1,29 @@
+# What is an Operating System?
+- An Operating System is a System software that manages all the resources of the computing device.
+    - Acts as an interface between the software and different parts of the computer or the computer hardware.
+    - Manages the overall resources and operations of the computer. 
+    - Controls and monitors the execution of all other programs that reside in the computer, which also includes application programs and other system software of the computer.
+    - Examples of Operating Systems are Windows, Linux, macOS, Android, iOS, etc.
+
+Operating System Goals:
+    - Run user applications and simplify problem-solving for users.
+    - Ensure the computer system is user-friendly and easy to navigate.
+    - Optimize the use of computer hardware for efficiency
+
+# What is an Operating System Used for?
+    - As a platform for Application programs: It provides a platform, on top of which, other programs, called application programs can run.
+    - Managing Input-Output unit: It also allows the computer to manage its own resources such as memory, monitor, keyboard, printer, etc. Management of these resources is required for effective and fair utilization.  
+    - Multitasking: It manages memory and allows multiple programs to run in their own space and even communicate with each other through shared memory.    
+    - Manages memory and Files: It manages the computer’s main memory and second storage. Additionally, it allows and deallocates memory to all tasks and applications.        
+    - Provides Security: It helps to maintain the system and applications safe through the authorization process. Thus, the OS provides security to the system.
+
+# Operating System Structures
+    - Process Management: Manages running programs (processes), including creation, scheduling, and termination for efficient CPU use.
+    - Main Memory Management: Allocates and tracks RAM usage for processes, using techniques like paging and virtual memory.
+    - File Management: Organizes, creates, deletes, and manages access to files on storage devices.
+    - I/O System Management: Coordinates data transfer between devices (e.g., keyboards, printers) and the system using drivers.
+    - Secondary Storage Management: Manages disks (e.g., HDDs, SSDs) for data storage, retrieval, and space allocation.
+    - Networking: Handles communication between computers, managing protocols and data transfer.
+    - Protection System: Secures resources by controlling access and authenticating users.
+    - Command-Interpreter System: Provides a user interface (e.g., command line) to interpret and execute user commands
+

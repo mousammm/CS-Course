@@ -1,0 +1,57 @@
+# Windows manages a computer through a combination of:
+- The File System: Where everything lives (executables, libraries, configs).
+- The Registry: A centralized, hierarchical database for system and application settings.
+- Processes & Services: The running programs and background daemons.
+- User & Security Contexts: Who is allowed to do what.
+
+1. The Windows File System: Beyond C:\
+
+- C:\Program Files & C:\Program Files (x86)
+    - Program Files: This is for 64-bit applications. 64-bit is the modern standard for PCs, allowing them to use more RAM.
+    - Program Files (x86): This is for 32-bit applications. The (x86) comes from the name of the old Intel 8086 processor family. Windows maintains this separation for compatibility. A 64-bit Windows runs 32-bit apps using a compatibility layer called WOW64 (Windows-on-Windows 64-bit).
+    - Why it matters: When an application installs, it puts its executables (.exe), libraries (.dll), and other resources here. This keeps things organized and is a key convention for the system.
+
+- C:\Windows
+    - The Heart of the OS. Do not casually delete things here!
+    - System32: Contains critical 64-bit system files (.exe, .dll, .sys drivers). This is where core components like cmd.exe, notepad.exe, and the DLLs that make Windows work live.
+    - SysWOW64: The weirdest named folder. On a 64-bit system, this contains the critical *32-bit* system files. When a 32-bit app tries to open a file from System32, WOW64 transparently redirects it to SysWOW64. (Yes, it's confusing by design for legacy reasons).
+    - System & System32\drivers\etc: Contains very low-level drivers and the famous hosts file for manual DNS overrides.
+
+- C:\Users\<YourUsername>
+    - Your personal sandbox. Each user gets their own. Key subfolders:
+        - Desktop, Documents, Pictures, etc.: Self-explanatory.
+        - AppData: This is HUGE for developers. It has three hidden folders:
+            - Local: Settings and data that don't roam between computers (e.g., browser cache, temporary files).
+            - Roaming: Settings that do sync if you're on a domain (e.g., browser bookmarks, saved application state).
+            - LocalLow: A low-integrity folder for processes like protected-mode browsers (less privilege).
+
+- C:\ProgramData
+    - A place for applications to store data that is not user-specific but is shared across all users on the machine (e.g., shared templates, common caches).
+
+2. Environment Variables
+    - What are they? Dynamic named values that can affect how running processes behave. They are like global variables for your operating system.
+
+    Common Examples:
+        - PATH: The most important one. It's a list of directories where Windows looks for executable files when you type a command in the terminal. When you type notepad, Windows checks all the folders in %PATH% until it finds notepad.exe.
+        - TEMP / TMP: Points to the current user's temporary file directory.
+        - USERNAME: Your current username.
+        - COMPUTERNAME: The name of your PC.
+
+    How to View/Set:
+        - GUI: System Properties -> Advanced -> Environment Variables...
+        Command Line:
+            - CMD: set (view all), set MY_VAR=MyValue (set for current session), setx for permanent setting.
+            - PowerShell: Get-ChildItem Env: (view all), $env:MY_VAR = "MyValue" (set for current session). For permanent changes, you use the .NET [Environment] class.
+
+3. The Windows Registry
+- What is it? A hierarchical database that stores low-level settings for the Windows OS and for applications that choose to use it. It's like the filesystem, but for settings.
+
+    - Structure (Hives): The registry is divided into several main "root" hives:
+        - HKEY_CLASSES_ROOT (HKCR): File association information (which program opens a .txt file).
+        - HKEY_CURRENT_USER (HKCU): Settings for the currently logged-in user. This is where user-specific application preferences are stored.
+        - HKEY_LOCAL_MACHINE (HKLM): Settings for the entire computer, regardless of the user. Hardware settings, installed software, etc.
+        - HKEY_USERS (HKU): Contains all loaded user profiles.
+        HKEY_CURRENT_CONFIG (HKCC): Information about the current hardware profile.
+
+    How to Access: regedit.exe (Registry Editor). WARNING: Be very careful. Changing the wrong value can break your system. Always export a backup before making changes.
+    From Command Line: The reg command allows you to query, add, delete, and copy registry entries from CMD or PowerShell.

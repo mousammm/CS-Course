@@ -1,0 +1,19 @@
+4. CMD vs. PowerShell
+
+$ A simple command-line shell. Its primary purpose is to execute commands and batch (.bat) files. 
+  PS: A full-featured task automation and configuration management framework. It's built on the .NET Framework.
+
+$ A limited set of commands and a simple scripting syntax.
+  PS: A rich, object-oriented scripting language. Commands (Cmdlets) return .NET objects, not just text.
+
+$ Commands  dir, copy, del, echo, set 
+  PS: Get-ChildItem (like dir), Copy-Item, Remove-Item, Write-Output, Get-Variable
+
+$ Pipes text from one command to another. 
+  PS: Pipes objects. This is a game-changer. You can pipe the output of Get-Process to Where-Object to filter by a property like CPU usage.
+
+$ Example dir | find "txt" (Finds lines of text with "txt") 
+  PS: Get-ChildItem | Where-Object { $_.Name -like "*.txt" } (Gets file objects and filters by the Name property)
+
+$ Good for quick, simple file operations. 
+  PS: Essential for system administration, DevOps, and deep Windows automation. You should focus on learning PowerShell.

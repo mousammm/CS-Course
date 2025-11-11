@@ -85,3 +85,5 @@ git config --global pull.rebase true
 
 # Tmux 
   - install tmux 
+
+

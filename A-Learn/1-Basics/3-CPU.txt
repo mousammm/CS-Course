@@ -1,0 +1,28 @@
+# What is a CPU ?
+- Central processing unit 
+- placed in a special slot called a socket on the computer’s motherboard
+- its does all the math 
+- Its like the brain 
+
+# Components of CPU 
+- Control Unit: The control unit manages the CPU by sending signals like clock, hold, and reset to its parts. It ensures all components work together to complete tasks. For example, it synchronizes data movement from cache memory to the ALU.
+
+- Arithmetic and Logic Unit (ALU): The ALU handles arithmetic tasks (like addition, subtraction, multiplication, division) and logical tasks (like AND, OR, comparisons). It uses addition for all calculations, e.g., solving 2×3 as 2+2+2=6.
+
+- Memory Unit: The memory unit stores data and instructions. Older CPUs used registers, but modern ones also have fast cache memory. The CPU fetches data from RAM, ROM, or hard disks and stores it in registers or cache during tasks
+
+# Functions of the CPU
+- The CPU’s main job is to process instructions from programs. It does this through a process called the Fetch-Decode-Execute-Store cycle:
+- This cycle happens billions of times a second, letting the CPU handle tons of tasks super fast!
+    - Fetch: the first CPU gets the instruction. That means binary numbers that are passed from RAM to CPU.
+    - Decode: When the instruction is entered into the CPU, it needs to decode the instructions. with the help of ALU(Arithmetic Logic Unit), the process of decoding begins.
+    - Execute: After the decode step the instructions are ready to execute.
+    - Store: After the execute step the instructions are ready to store in the memory.
+
+# Different cpus 
+- A core is like a mini-CPU inside the main CPU, and more cores mean the CPU can do more tasks at once
+
+    - Multiple Cores: Many CPUs have multiple cores, which are like mini-CPUs that can work on different tasks at the same time. It’s like having several chefs in the kitchen instead of one.
+    - Faster Clocks: The clock speed (measured in GHz, like 3.5 GHz) determines how many instructions the CPU can handle per second.
+    - Bigger Cache: More cache means the CPU can store more data close by, reducing wait times.
+    - Pipelining: This lets the CPU start working on the next instruction before finishing the current one, like a factory line.

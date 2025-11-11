@@ -1,0 +1,29 @@
+# What is a Computer ?
+- It takes input 
+- Processes it using c Central processing Unit (CPU)
+- Stores info
+- Produce output
+
+# Types of computer ?
+- Desktop
+- Laptop 
+- Servers [provides services to other network]
+
+# How does hardware communicate with software ?
+When you give input (e.g., typing a letter on a keyboard)
+- the hardware (keyboard) sends input to the software. 
+- The software then converts the input into a machine-readable language (binary) that the CPU can process. 
+- The output (e.g., the letter ‘A’) is then displayed on the screen as a result of this process.
+
+# What is a Software?
+
+- Software is a set of instructions that tells the computer what to do when to do, it and how to do it. 
+- An interpreter is responsible for converting the software’s human-readable code into machine language (binary code) that the CPU understands and executes.
+
+# Types of Hardware:
+
+- Central Processing Unit (CPU) - Executes instructions and performs calculations.
+- Memory (RAM) - Temporarily stores data that the CPU needs during operation.
+- Storage Devices (HDD/SSD) - Store data permanently, even when the computer is turned off.
+- Input Devices - Allow users to interact with the computer (e.g., keyboard, mouse).
+- Output Devices - Display or produce results of the computer’s processing (e.g., monitors, printers).
