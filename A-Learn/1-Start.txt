@@ -1,0 +1,15 @@
+# Choosing a programming lang 
+- cpp then c 
+
+# what to learn in cpp
+- dont learn evrything 
+- get familier with the syntax
+- if else / loops / switch / header files
+
+# NEXt 
+- after learn the basic synatax 2 things need to be done
+  - build projects go to the project folder
+  - start the internals of computer
+
+# start the internals of computer
+- Geeks for Geeks > Tutorials > Cs subjects
