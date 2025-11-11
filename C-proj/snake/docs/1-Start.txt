@@ -1,0 +1,9 @@
+How games works?
+
+Initialize Game -> Game Loop -> Clean Up
+
+The Game Loop continuously runs until the game ends:
+    Process Input (keyboard, mouse, etc.)
+    Update Game State (move characters, check collisions)
+    Render/Draw (show everything on screen)
+

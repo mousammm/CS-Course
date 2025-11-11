@@ -1,0 +1,100 @@
+# Logic() - The "Brain" Function (The Trickiest Part):
+
+    Moving the Tail: "I need to make the tail follow the head. The best way is to shift every tail segment to the position of the one in front of it. The segment right behind the head takes the head's old position."
+
+    Moving the Head: "Easy. Based on dir, just increase or decrease headX or headY."
+
+    Wall Collision: "What happens when the snake hits the wall? In this version, I'll implement wrap-around. If the head goes off the right side, it appears on the left."
+
+    Self-Collision: "Check if the head's new position is the same as any tail segment's position. If it is, it's gameOver."
+
+    Eating Fruit: "If the head is on the fruit:
+        - Increase the score.
+        - Increase the tail length (nTail++).
+        - Spawn a new fruit in a random location, but I must check that it doesn't spawn on top of the snake."
+
+# Logic
+void logic() {
+
+    // Move tail segments
+
+    // Move head based on direction
+
+    // Wall collision (wrap-around)
+
+    // Fruit collection
+    if (headX == fruitX && headY == fruitY) {
+       // Generate new fruit position (ensure it's not on snake)
+
+    }
+
+}
+
+# Move tail segments
+    if (nTail > 0) {
+        // Store current tail positions
+        int prevX = tailX[0];
+        int prevY = tailY[0];
+        int tempX, tempY;
+
+        tailX[0] = headX;
+        tailY[0] = headY;
+
+        // Update remaining tail segments
+        for (int i = 1; i < nTail; i++) {
+            tempX = tailX[i];
+            tempY = tailY[i];
+            tailX[i] = prevX;
+            tailY[i] = prevY;
+            prevX = tempX;
+            prevY = tempY;
+        }
+    }
+
+# Move head based on direction
+    switch (dir) {
+        case UP:    headY--; break;
+        case LEFT:  headX--; break;
+        case DOWN:  headY++; break;
+        case RIGHT: headX++; break;
+        default: break;
+    }
+
+# Wall collision (wrap-around)
+    if (headX >= wallWidth) headX = 0;
+    else if (headX < 0) headX = wallWidth - 1;
+
+    if (headY >= wallHeight) headY = 0;
+    else if (headY < 0) headY = wallHeight - 1;
+
+    // Self-collision detection
+    for (int i = 0; i < nTail; i++) {
+        if (tailX[i] == headX && tailY[i] == headY) {
+            gameOver = true;
+            break;
+        }
+    }
+
+# Generate new fruit position (ensure it's not on snake)
+        bool validPosition;
+        do {
+            validPosition = true;
+            fruitY = rand() % wallHeight;
+            
+            // Check if fruit spawns on snake head
+            if (fruitX == headX && fruitY == headY)
+                validPosition = false;
+            
+            // Check if fruit spawns on any tail segment
+            for (int i = 0; i < nTail && validPosition; i++) {
+                if (fruitX == tailX[i] && fruitY == tailY[i]) {
+                    validPosition = false;
+                    break;
+                }
+            }
+        } while (!validPosition);
+
+        score += 10;
+        if (nTail < MAX_TAIL) {
+            nTail++;
+        }

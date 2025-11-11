@@ -1,0 +1,33 @@
+# Setup() - The "New Game" Function:
+- Set gameOver to false.
+- Set direction to STOP so the game doesn't start moving immediately.
+- Put the snake head in the middle of the map.
+- Place the first fruit at a random location.
+- Reset the score and tail length to zero.
+
+void setup() {
+    gameOver = false;
+    dir = STOP;
+    headX = wallWidth / 2;
+    headY = wallHeight / 2;
+
+    fruitX = rand() % wallWidth;
+    fruitY = rand() % wallHeight;
+
+    score = 0;
+    nTail = 0;
+
+    // Initialize tail arrays
+- we ini the tailX/Y with -1 
+- as these just store the cordinates for the snake body
+- by ini with 0 we set the snake body at 0th cordinate 
+- -1 is safe as thre is no - codintates for our game
+    for (int i = 0; i < MAX_TAIL; i++) {
+        tailX[i] = -1;
+        tailY[i] = -1;
+    }
+}
+
+# Additionally  <ctime.h>
+// Initialize random seed
+srand(static_cast<unsigned int>(time(nullptr)));

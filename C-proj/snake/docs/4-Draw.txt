@@ -1,0 +1,67 @@
+# Draw() - The "Artist" Function:
+
+- First, I need to clear the screen. I can use system("cls")... but that flashes. A better way is to just move the cursor back to the top-left with SetConsoleCursorPosition so it redraws over the old frame."
+
+- Draw the top border."
+- For each cell inside the borders:
+   - If it's the head's position, draw an O.
+   - If it's the fruit's position, draw an F.
+   - If it's a tail segment, draw an o.
+   - Otherwise, draw a space."
+- Draw the bottom border and print the score and instructions."
+
+# Draw fun 
+void draw() {
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), {0, 0});
+
+    // Draw top wall
+    // Addind 2 for the right / left border
+    for (int i = 0; i < wallWidth + 2; i++)
+        cout << "#";
+    cout << endl;
+
+    // Draw game area
+
+    // Draw bottom wall
+    for (int i = 0; i < wallWidth + 2; i++)
+        cout << "#";
+    cout << endl;
+    
+    cout << "Score: " << score << " | Tail: " << nTail << endl;
+    cout << "Controls: WASD to move, P to pause, X to exit" << endl;
+}
+
+# Game Area 
+    // Draw game area
+    for (int i = 0; i < wallHeight; i++) {
+        for (int j = 0; j < wallWidth; j++) {
+            if (j == 0)
+                cout << "#";  // left border
+
+            // Check what to draw at this position
+
+            if (j == wallWidth - 1)
+                cout << "#";  // right border
+        }
+        cout << endl;
+    }
+
+# What to draw ( food head/tail or sapces )
+
+            // Check what to draw at this position
+            if (i == headY && j == headX)
+                cout << "O";  // Snake head
+            else if (i == fruitY && j == fruitX)
+                cout << "F";  // Fruit
+            else {
+                bool isTail = false;
+                for (int k = 0; k < nTail; k++) {
+                    if (tailX[k] == j && tailY[k] == i) {
+                        cout << "o";  // Snake body
+                        isTail = true;
+                        break;
+                    }
+                }
+                if (!isTail)
+                    cout << " ";
+            }

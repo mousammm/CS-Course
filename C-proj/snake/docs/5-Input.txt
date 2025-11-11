@@ -1,0 +1,30 @@
+# Input() - The "Listener" Function:
+- Check if a key has been pressed with _kbhit().
+- If it has, read the key with _getch().
+- Change the dir variable based on the key (W, A, S, D). But be smart! Don't let the snake turn directly back onto itself (e.g., from UP to DOWN)."
+- Also, listen for 'X' to quit and 'P' to pause."
+
+void input() {
+    if (_kbhit()) {
+        switch (_getch()) {
+            case 'w':
+                if (dir != DOWN) dir = UP;
+                break;
+            case 'a':
+                if (dir != RIGHT) dir = LEFT;
+                break;
+            case 's':
+                if (dir != UP) dir = DOWN;
+                break;
+            case 'd':
+                if (dir != LEFT) dir = RIGHT;
+                break;
+            case 'x':
+                gameOver = true;
+                break;
+            case 'p':
+                dir = STOP;
+                break;
+        }
+    }
+}

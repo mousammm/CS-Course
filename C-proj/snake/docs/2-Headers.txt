@@ -1,0 +1,36 @@
+Step1 : So 1st we will set up all our headers 
+
+#include <iostream>    // For input/output (cout, cin)
+#include <conio.h>     // For keyboard input (_kbhit, _getch)
+#include <windows.h>   // For Sleep() function and console handling
+using namespace std;   // So we don't have to write std:: everywhere
+
+Step2 : Set up some globals 
+
+bool gameOver;                      // if true we exit 
+const int width = 20, height = 20;  // borders the game area
+int headX, headY, fruitX, fruitY, score;
+
+enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
+eDirection dir;
+
+const int MAX_TAIL = 100; // Maximum tail length
+int tailX[MAX_TAIL], tailY[MAX_TAIL];
+int nTail;
+
+Step3 : Main loop
+
+int main() {
+    Setup();  // Initialize everything
+    while(!gameOver) {
+      // The inside of this loop will be one "frame" of the game.
+      Draw();
+      Input();
+      Logic();
+   }
+}
+
+Every game loop needs to do three things:
+    Draw the current state of the world.
+    Get Input from the player.
+    Update the game's Logic based on that input.
