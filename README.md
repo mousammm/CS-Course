@@ -5,3 +5,5 @@ Nah, this is not a c++ guide this is something if i have to start over again as 
 
 If today i loose all my knowledge everything that i have studied ,
 Then the only thing i need is this to regain all everything 
+
+## And i am not gonna expalin why i did this and not that! 

@@ -161,6 +161,7 @@ void logic() {
         bool validPosition;
         do {
             validPosition = true;
+            fruitX = rand() % wallWidth;
             fruitY = rand() % wallHeight;
             
             // Check if fruit spawns on snake head
