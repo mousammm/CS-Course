@@ -1,0 +1,45 @@
+# System Call
+
+- a programmatic way in which a computer program requests a service from the kernel of the operating system on which it is executed
+
+# System Calls are,
+    - A way for programs to interact with the operating system.
+    - Provide the services of the operating system to the user programs.
+    - Only entry points into the kernel and are executed in kernel mode.
+
+# How do System Calls Work?
+
+- A system call allows a program to request services from the operating system.
+- It can be written in high-level languages (C, C++, Pascal) or in assembly.
+- When a program makes a system call, it switches to kernel mode.
+- The OS handles the request, performs the task (e.g., file access, process control), and returns the result.
+- Without system calls, each program would need its own way to access hardware, making systems inconsistent and error-prone.
+
+# Types of System Calls
+
+- File System: Used to create, open, read, write, and manage files and directories.
+  - open()
+  - close()
+  - read()
+  - write()
+  - seek()
+ 
+- Process Control: Used to create, execute, synchronize, and terminate processes.
+  - fork()
+  - exec()
+  - kill()
+ 
+- Memory Management: Used to allocate, deallocate, and manage memory for processes.
+  - brk()
+  - sbrk()
+  - nmap()
+  
+- Interprocess Communication (IPC): Used for data exchange and communication between different processes.
+  - pipe()
+  - socket()
+ 
+- Device Management: Used to request and release devices, and to perform read/write operations on them.
+  - setConsoleMode()
+  - WriteConsole()
+  - Open()
+  - Close()

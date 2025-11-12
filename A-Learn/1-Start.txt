@@ -1,15 +1,64 @@
-# Choosing a programming lang 
-- cpp then c 
+Os inside 
+windows 
+linux
+Networking 
+Maths 
 
-# what to learn in cpp
-- dont learn evrything 
-- get familier with the syntax
-- if else / loops / switch / header files
+1. Computer Science Core Foundations
+    Computer Fundamentals             // ok 
+        1. Introduction                     // ok 
+        2. Components                       // ok
+        3. Operating Systems
+            Windows                        // ph
+            Linux                          // ph
+        4. Internet & World Wide Web (WWW)
+            Web Browser                    // ph
+            Web Server                     // ph
+            Web Protocols                  
+            Web Security
+            Databases
+            Internet
+            WiFi
+        5. Office Tools
+        6. Shortcut Keys
+        7. Key Comparison
+        8. Introduction to Programming
+            C
+            C++
+        9. Computer Networks
+            Introduction
+            Types of Networks (LAN, WAN, MAN)
+            Network Topologies
+            Web Protocols
+            Network Devices
+        10. Security and Privacy
+            What is Computer Security?
+            Importance of Computer Security
+            Common Security Threats
+            Malware
+            Network Security Measures
+            Access Control
+            User Authentication
+            Online Privacy
+        11. Careers & Jobs in Computer Science
 
-# NEXt 
-- after learn the basic synatax 2 things need to be done
-  - build projects go to the project folder
-  - start the internals of computer
+    Engineering Mathematics
 
-# start the internals of computer
-- Geeks for Geeks > Tutorials > Cs subjects
+    Maths for Computer Science
+
+2. Systems & Networking
+    Operating Systems
+    Computer Organization and Architecture
+    Computer Networks
+    Theory of Computation
+    Compiler Design
+    Distributed Systems
+    Linux Tutorial
+    Cybersecurity Tutorial
+
+3. Data and Database Technologies
+    Database Management System (DBMS)
+    Data Warehousing
+
+4. Data Science                        // nil
+5. Programming & Software Development  // nil

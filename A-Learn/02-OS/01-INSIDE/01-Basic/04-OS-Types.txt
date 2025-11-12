@@ -1,0 +1,10 @@
+# Different tyoes of OS
+
+- Batch Operating System
+- Multi-Programming Operating System
+- Multi-tasking/Time-sharing Operating systems
+- Multi-Processing Operating System
+- Distributed Operating System
+- Network Operating System
+- Real-Time Operating System
+- Mobile Operating Systems

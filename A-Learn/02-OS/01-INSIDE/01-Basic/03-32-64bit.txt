@@ -1,0 +1,19 @@
+# Difference Between 32-bit and 64-bit Operating Systems
+
+-  A 32-bit system can access 2^32 different memory addresses, i.e. 4 GB of RAM or physical memory. Ideally, it can access more than 4 GB of RAM also. 
+
+- A 64-bit system can access 2^64 different memory addresses, i.e. actually 18-quintillion bytes of RAM. In short, any amount of memory greater than 4 GB can be easily handled by it.
+
+- A computer with a 64-bit processor can have a 64-bit or 32-bit version of an operating system installed. However, with a 32-bit operating system, the 64-bit processor would not run at its full capability
+
+# Difference Between x64 and x86 Architecture
+
+x64 ( same x86_64)
+- x64 is a 64-bit structure that extends the x86 structure. The time period "x64" is frequently used interchangeably with "x86-64" or "AMD64" because it became advanced with the aid of AMD as an extension of the x86 structure. Later, Intel observed this model, calling it "Intel sixty-four" or "IA-32e". This 64-bit structure was introduced to remedy the limitations of the 32-bit x86 architecture.
+        x64 processors are backwards like minded with 32-bit software programs; This means you could run all 32-bit software and sixty-four-bit applications on x64 CPUs. However, 64-bit processors can take advantage of 64-bit software and running structures for higher normal overall performance and support more reminiscence.
+
+x86
+- The time period "x86" in the beginning mentioned Intel 8086, 80286, 80386, and so forth. Refers to Intel's own family of generation microprocessors, which include This machine includes a training set (ISA) containing a 32-bit reference and facts course. The x86 architecture has a long record relationship lower back to the early Nineteen Eighties and has long passed via many revisions and upgrades.
+        One of the important thing functions of the x86 structure is its compatibility with older software and hardware variations. Many packages and modules evolved for x86-primarily based architectures will keep running on modern-day x86 processors, together with sixty-four-bit processors. At the same time, this backward compatibility has introduced main upgrades to the x86 architecture.
+
+
