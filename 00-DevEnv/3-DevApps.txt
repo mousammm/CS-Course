@@ -8,6 +8,10 @@ DEV APPS-
     - ghostty (linux and mac)
 - GIT 
 - Tmux 
+- Yazi (file mgr)
+- everything void 
+    - tools > options > keyboard > new window key to open void 
+- btop 
 - Unzipper (winrar/7zip)
 - uTorrent 
 - Rufus 

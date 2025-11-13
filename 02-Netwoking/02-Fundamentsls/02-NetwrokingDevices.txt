@@ -1,0 +1,88 @@
+# Network Devices
+
+- Network devices are fundamental hardware components in computer networking that operate across different layers of the OSI and TCP/IP models.
+- They facilitate data transmission, regulate traffic flow, provide interconnectivity between heterogeneous networks, and enforce security policies
+
+Common Networking Devices
+
+1. Access Point (AP)
+    -Creates a wireless local area network (WLAN).
+    -Allows wireless devices (smartphones, laptops, IoT devices) to connect to a wired network.
+
+2. Modem
+    - Stands for Modulator/Demodulator.
+    - Converts digital signals from computers into analog signals for transmission over telephone lines, cable systems, or wireless media, and vice versa.
+    - Acts as the primary internet access device for users.
+
+Types of Modems:
+    DSL Modem: Uses telephone lines, slower than cable.
+    Cable Modem: Uses TV cables, faster than DSL.
+    Wireless Modem: Provides internet via Wi-Fi.
+    Cellular Modem: Uses mobile data networks.
+
+3. Firewall
+    - A security device that filters incoming and outgoing network traffic.
+    - Blocks unauthorized access while allowing trusted data.
+    - Can be hardware-based, software-based, or cloud-based.
+    - Protects against hackers, malware, and cyber threats.
+
+4. Repeater
+    - Operates at the Physical Layer of the OSI model.
+    - Regenerates and amplifies weak signals to extend network range.
+    - Commonly used in large LANs or WANs to solve signal attenuation issues.
+
+5. Hub
+    - A multiport repeater used in star topology networks.
+    - Broadcasts data to all connected devices, regardless of the destination.
+    - Inefficient compared to switches due to collisions.
+
+Types of Hubs:
+    - Active Hub: Boosts signals, acts as a repeater.
+    - Passive Hub: Relays signals without amplification.
+    - Intelligent Hub: Provides monitoring and management functions.
+
+6. Bridge
+    - Operates at the Data Link Layer (Layer 2).
+    - Connects and filters traffic between two LAN segments.
+    - Uses MAC addresses to forward data only to the intended segment.
+
+Types of Bridges:
+    - Transparent Bridge: Learns MAC addresses automatically.
+    - Source Routing Bridge: Follows routes specified by the sender.
+
+7. Switch
+    - An advanced form of a bridge with multiple ports.
+    - Works at Layer 2 (Data Link Layer) and selectively forwards packets.
+    - Reduces collisions by creating separate collision domains.
+
+Types of Switches:
+    - Unmanaged Switches: Plug-and-play, simple use.
+    - Managed Switches: Supports VLANs, QoS, link aggregation.
+    - Layer 2 Switches: Forward frames within the same network.
+    - Layer 3 Switches: Perform routing between different networks.
+    - PoE Switches: Provide power and data through the same cable.
+    - Gigabit Switches: Support high-speed Ethernet.
+    - Modular Switches: Expandable and customizable for large networks.
+
+8. Router
+    - Operates at the Network Layer (Layer 3).
+    - Uses IP addresses to route data between different networks (LAN to WAN).
+    - Maintains a routing table to decide the best path.
+    - Divides broadcast domains for better efficiency.
+
+9. Gateway
+    - Acts as a protocol converter.
+    - Connects two networks using different architectures or protocols.
+    - Can work at any OSI layer depending on its function.
+    - Examples: connecting an enterprise LAN to the internet.
+
+10. Brouter (Bridging Router)
+    - A hybrid device with features of both a Bridge and a Router.
+    - Works at Data Link Layer (as bridge) and Network Layer (as router).
+    - Routes packets between networks and filters traffic within LANs.
+
+11. NIC (Network Interface Card)
+    - A hardware adapter that enables a computer to connect to a network.
+    - Works at Layer 2 (Data Link Layer).
+    - Has a unique MAC address for identification.
+    - Can be wired (Ethernet) or wireless (Wi-Fi).

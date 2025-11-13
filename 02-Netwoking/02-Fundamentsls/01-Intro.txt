@@ -1,0 +1,59 @@
+# Basic Terminologies of Computer Networks
+
+- Network: A group of connected computers and devices that can communicate and share data with each other.
+- Node: Any device that can send, receive, or forward data in a network. This includes laptops, mobiles, printers, earbuds, servers, etc.
+- Networking Devices: Devices that manage and support networking functions. This includes routers, switches, hubs, and access points.
+- Transmission Media: The physical or wireless medium through which data travels between devices.
+- Wired media: Ethernet cables, optical fiber.
+- Wireless media: Wi-Fi, Bluetooth, infrared
+- Service Provider Networks: Networks offered by external providers that allow users or organizations to lease network access and capabilities. This includes internet providers, mobile carriers, etc.
+
+# How Does a Computer Network Work
+- Network Node: Any device in a network, such as a modem, router, or computer, that sends or receives data.
+- Link: The medium that connects nodes, like cables, wires, or wireless signals.
+- Working: Networks use rules called protocols to send and receive data between devices. Each device is identified by a unique IP Address.
+- Firewall: A security tool (hardware or software) that monitors traffic. Based on set rules, it either allows, blocks, or drops data.
+
+# Types of Computer Network Architecture
+
+- Client-Server Architecture:in which Nodes can be Servers or Clients. Here, the server node can manage the Client Node Behaviour.
+- Peer-to-Peer Architecture: there is not any concept of a Central Server. Each device is free for working as either client or server.
+
+# Network Devices
+
+- An interconnection of multiple devices, also known as hosts,
+- that are connected using multiple paths for the purpose of sending/receiving data or media.
+- Computer networks can also include multiple devices/mediums which help in the communication between two different devices;
+- these are known as Network devices and include things such as routers, switches, hubs, and bridges. 
+
+1. Router
+    Connects multiple networks (like home network to the internet).
+    Directs data packets to their correct destination.
+
+2. Switch
+    Connects devices within a network (like computers in an office).
+    Forwards data only to the specific device it is meant for.
+
+3. Hub
+    Basic device that connects multiple devices in a network.
+    Sends data to all devices (less efficient than a switch).
+
+4. Bridge
+    Connects and filters traffic between two networks or segments.
+    Helps reduce network traffic.
+
+5. Gateway
+    Connects two different types of networks.
+    Translates data between different protocols.
+
+6. Access Point (AP)
+    Provides wireless connectivity to devices.
+    Extends a wired network into a Wi-Fi network.
+
+7. Modem
+    Converts digital data from a computer into signals for phone/cable lines and vice versa.
+    Provides internet access.
+
+8. Firewall
+    Monitors and controls incoming and outgoing network traffic.
+    Provides security by blocking unauthorized access.
