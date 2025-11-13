@@ -1,0 +1,25 @@
+# Web Server and Its Types
+
+- A web server is a system either software, hardware, or both that stores, processes, and delivers web content to users over the Internet using the HTTP or HTTPS protocol.
+- When a user’s browser sends a request (like visiting a website), the web server responds by delivering the appropriate resources, such as HTML pages, images, videos, or data.
+
+- An HTTP server is a specific type of web server which is responsible for handling HTTP requests and responses.
+- While all HTTP servers are web servers, not all web servers are limited to HTTP. Some web servers may support additional protocols like FTP or SMTP.
+
+# How Does a Web Server Work?
+
+- When a user accesses a website by entering a URL in their web browser,
+- the browser sends an HTTP request to the web server hosting the website.
+- The web server processes this request and returns the necessary resources to display the page on the user’s browser. 
+
+    - Client Request: (https://www.example.com/) the user enters a URL.
+    - DNS Resolution: To get the IP address of the requested domain, the browser contacts a Domain Name System (DNS) server.
+    - Connecting to the Web Server: Using the obtained IP address the browser establishes a connection with the web server.
+    - Processing Request: The web server receives the request and processes it.
+    - Serving the Response: The requested files(HTML, CSS, JavaScript, images ) are sent back to the client's browser by the web server.
+    - Rendering the Web Page: Based on the received data the browser displays the web page to the user.
+
+# Types of Web Servers
+1. Apache Web Server
+2. Nginx Web Server
+3. NodeJS Web Server

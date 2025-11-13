@@ -1,0 +1,120 @@
+1. Network Scanner & Packet Sniffer
+    Goal: Understand raw packets and network reconnaissance
+    Tech: C/C++ with raw sockets or libpcap
+    Features:
+        ARP scanner to discover devices on local network
+        TCP port scanner (SYN, FIN, XMAS scans)
+        Packet capture and display basic header info
+        Save captured packets to pcap format
+    Learning: Ethernet frames, IP/TCP/UDP headers, network discovery
+
+2. Custom HTTP/1.1 Server
+    Goal: Master application layer protocols
+    Tech: C/C++ with TCP sockets
+    Features:
+        Handle multiple concurrent clients (fork/threads)
+        Parse HTTP requests manually (no libraries)
+        Serve static files (HTML, images)
+        Support GET, POST, HEAD methods
+        Implement persistent connections
+    Learning: TCP server design, HTTP protocol, concurrency models
+
+Phase 2: Protocol Implementation (4-6 weeks)
+
+3. Custom DNS Resolver
+    Goal: Understand UDP-based protocols and distributed systems
+    Tech: C/C++ with UDP sockets
+    Features:
+        Parse DNS packet format (RFC 1035)
+        Implement iterative resolution (query root→TLD→authoritative)
+        Cache responses with TTL
+        Support common record types (A, AAAA, CNAME, MX)
+        Handle DNS compression pointers
+    Learning: UDP programming, protocol parsing, caching strategies
+
+4. Simple VPN with TUN/TAP
+    Goal: Learn network interfaces and tunneling
+    Tech: C/C++ with TUN/TAP devices
+    Features:
+        Create virtual network interface
+        Encapsulate IP packets in custom protocol
+        Basic encryption (AES) for tunnel
+        Route traffic between two endpoints
+        Handle IP packet fragmentation
+    Learning: Kernel interfaces, tunneling, encryption, routing
+
+Phase 3: Advanced Systems (4-8 weeks)
+
+5. Userspace TCP Stack
+    Goal: Deep understanding of TCP internals
+    Tech: C/C++ with raw sockets or TUN/TAP
+    Features:
+        Three-way handshake implementation
+        Sequence numbers and ACK mechanism
+        Retransmission timer and RTT estimation
+        Basic congestion control (Tahoe)
+        Connection teardown (FIN handshake)
+    Learning: TCP state machine, reliability, flow control, congestion control
+
+6. High-Performance Load Balancer
+    Goal: Master concurrency and performance optimization
+    Tech: C/C++ with epoll/kqueue
+    Features:
+        Layer 4 (TCP) load balancing
+        Epoll for handling 10k+ concurrent connections
+        Multiple algorithms (round-robin, least connections)
+        Health checking backend servers
+        Connection pooling and reuse
+    Learning: I/O multiplexing, load balancing, health monitoring
+
+Phase 4: Expert Level (6-10 weeks)
+
+7. QUIC Protocol Implementation
+    Goal: Work with modern transport protocols
+    Tech: C/C++ with UDP sockets + OpenSSL
+    Features:
+        QUIC connection handshake with TLS 1.3
+        Stream multiplexing over UDP
+        Packet number encryption/decryption
+        Basic congestion control
+        HTTP/3 mapping (simplified)
+    Learning: Modern transport protocols, crypto integration, UDP reliability
+
+8. Kernel-Bypass Packet Processing with DPDK
+    Goal: Learn high-performance networking
+    Tech: C/C++ with DPDK framework
+    Features:
+        Bind to NIC and receive packets directly in userspace
+        Build layer 3 router with forwarding table
+        Implement access control list (ACL) filtering
+        Multi-core processing with lock-free queues
+        Performance monitoring (packets/sec, latency)
+    Learning: Kernel bypass, zero-copy, hardware acceleration, NUMA
+
+Bonus Specialized Projects
+
+9. Network Intrusion Detection System (NIDS)
+    Parse traffic and detect suspicious patterns
+    Signature-based detection (like Snort)
+    Protocol anomaly detection
+
+10. BitTorrent Client
+    Implement BitTorrent protocol
+    Peer discovery and piece selection
+    UDP tracker protocol
+
+11. Software-Defined Networking (SDN) Controller
+    OpenFlow protocol implementation
+    Network topology discovery
+    Custom routing algorithms
+
+Essential Tools for Your Journey
+    Wireshark - Packet analysis
+    tcpdump - Command-line packet capture
+    netcat/socat - Network testing
+    iperf - Network performance testing
+    valgrind - Memory leak detection
+    gdb - Debugging
+    DPDK - For kernel-bypass networking
+
+
