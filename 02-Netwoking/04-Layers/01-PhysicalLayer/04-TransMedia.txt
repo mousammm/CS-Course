@@ -1,0 +1,99 @@
+Transmission Media in Computer Networks
+
+- Transmission media is the physical medium through which data is transmitted from one device to another within a network.
+- These media can be wired or wireless.
+- The choice of medium depends on factors like distance, speed, and interference.
+
+#. Guided Media
+
+- Guided Media is also referred to as Wired or Bounded transmission media.
+- Signals being transmitted are directed and confined in a narrow pathway by using physical links.
+- There are 3 major types of Guided Media: Twisted Pair, Coaxial and Optical Fiber Cables
+
+Features:
+    High Speed
+    Secure
+    Used for comparatively shorter distances
+
+1 Twisted Pair Cable
+
+(a) Unshielded Twisted Pair (UTP): It is used for telephonic applications. k
+(b) Shielded Twisted Pair (STP): It is used in fast data rate Ethernet and in voice and data channels of telephone lines. 
+
+2 Coaxial Cable
+
+- The coaxial cable transmits information in two modes: 
+- Baseband mode(dedicated cable bandwidth) and
+- Broadband mode(cable bandwidth is split into separate ranges)
+- Cable TVs and analog television networks widely use Coaxial cables
+
+3 Optical Fiber Cable
+
+- The WDM (Wavelength Division Multiplexer) supports two modes, namely unidirectional and bidirectional mode. 
+
+4 Stripline
+5 Microstripline
+
+#. Unguided Media
+
+- It is also referred to as Wireless or Unbounded transmission media . No physical medium is required for the transmission of electromagnetic signals. 
+
+Features:
+    The signal is broadcasted through air
+    Less Secure
+    Used for larger distances
+
+1 Radio Waves
+
+- Radio waves are easy to generate and can penetrate through buildings.
+- The sending and receiving antennas need not be aligned.
+- Frequency Range: 3KHz - 1GHz3KHz - 1GHz. AM and FM radios and cordless phones use Radio waves for transmission.
+
+Types of Radio Waves:
+    Short Wave: AM Radio
+    VHF (Very High Frequency): FM Radio/TV
+    UHF (Ultra High Frequency): TV
+
+Radio Wave Components:
+    Transmitter: Responsible for encoding the signal.
+    Receiver: Responsible for decoding the signal.
+
+2 Microwaves
+
+- It is a line of sight transmission i.e. the sending and receiving antennas need to be properly aligned with each other.
+- The distance covered by the signal is directly proportional to the height of the antenna.
+- Frequency Range:1GHz - 300GHz.
+- Micro waves are majorly used for mobile phone communication and television distribution. 
+
+3 Infrared
+
+- Infrared waves are used for very short distance communication.
+- They cannot penetrate through obstacles.
+- This prevents interference between systems.
+- Frequency Range:300GHz - 400THz. It is used in TV remotes, wireless mouse, keyboard, printer, etc. 
+
+# Causes of Transmission Impairment
+
+    Attenuation:
+- Loss of signal strength as it travels over distance due to resistance of the medium.
+- Amplifiers are used to restore the signal.
+
+    Distortion:
+- Change in the shape of a signal, usually in composite signals with different frequencies.
+- Since each frequency travels at a different speed, they reach the receiver at different times, causing phase shifts and distortion.
+
+    Noise:
+- Unwanted signals that mix with the original signal, potentially corrupting it.
+- Common types include induced noise, crosstalk, thermal noise, and impulse noise.
+
+Transmission Media  Application
+
+Unshielded Twisted Pair (UTP): Local Area Networks (LAN), telephones
+Shielded Twisted Pair (STP): Industrial networks, environments with high interference
+Optical Fiber Cable: Long-distance communication, internet backbones
+Coaxial Cable: Cable TV, broadband internet, CCTV
+Stripline: Printed Circuit Boards (PCBs), microwave circuits
+Microstripline: Antennas, satellite communication, RF circuits
+Radio: Wireless communication, AM/FM radio, mobile phones
+Infrared: Remote controls, short-range communication
+Microwave: Satellite communication, radar, long-distance links

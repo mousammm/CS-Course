@@ -1,0 +1,68 @@
+Project 1: Build Your Own Ethernet Cable & Sniffer
+What you'll need:
+    RJ45 connectors
+    Ethernet cable
+    Crimping tool
+    Raspberry Pi Pico ($4)
+    Breadboard and wires
+
+What you'll learn:
+    How 1s and 0s become voltage changes
+    Manchester encoding (how clocks sync)
+    Collision detection (CSMA/CD)
+    Actual electrical signaling
+
+Project 2: DIY Radio (WiFi/Bluetooth at Physical Layer)
+Build a Simple SDR (Software Defined Radio):
+
+apt install gqrx
+
+What you'll see:
+    WiFi channels as actual frequency ranges
+    Bluetooth packets as radio bursts
+    AM/FM radio - understand modulation
+    How digital data becomes radio waves
+
+Hardware options:
+    RTL-SDR ($20) - USB TV tuner that can receive 24MHz-1.7GHz
+    HackRF One ($300) - Transmit AND receive
+    ADALM-PLUTO ($200) - Lab-grade SDR
+
+Project 3: Build a Simple Network from SCRATCH
+Two Arduino Communication
+
+What you'll implement:
+    Your own framing (like Ethernet frames)
+    Your own error detection (like CRC)
+    Your own collision avoidance
+    Your own physical protocol
+
+Project 4: Visible Light Communication (Li-Fi)
+Send data with LIGHT:
+
+What you'll learn:
+    Modulation techniques
+    Signal-to-noise ratio
+    How fiber optics work (but with visible light)
+
+Project 5: Analyze Actual Network Signals
+
+With Oscilloscope ($50-100 used):
+    Watch Ethernet cable signals - see the actual voltage changes
+    Measure timing - see how fast bits actually transmit
+    Understand noise - see how signals degrade over distance
+
+Project 6: Build a Simple PHY Chip Emulator
+Implement Manchester Encoding
+
+Beginner Path ($25 total):
+    Get RTL-SDR dongle ($20)
+    Install SDR# or gqrx (free)
+    Tune to WiFi frequencies (2.4GHz) - just to SEE the spectrum
+    Listen to FM radio - understand how modulation works
+
+Option 1 (Software Approach):
+sudo apt install wireshark
+
+Option 2 (Hardware Approach - Recommended):
+Order an RTL-SDR dongle ($20 on Amazon) and start seeing the actual radio spectrum.

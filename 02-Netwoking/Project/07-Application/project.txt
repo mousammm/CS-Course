@@ -1,0 +1,39 @@
+1. Simple Web Server (HTTP)
+
+What: Your own mini web server that serves web pages
+Why: Understand how web browsing actually works
+
+2. Simple Email Client (SMTP)
+
+What: Send emails programmatically
+Why: Understand how email protocols work
+
+3. File Transfer Client (FTP)
+
+What: Upload/download files using FTP protocol
+Why: Learn file transfer protocols
+
+4. DNS Lookup Tool
+
+What: Resolve domain names to IP addresses
+Why: Understand how DNS works
+
+5. REST API Client
+
+What: Interact with web APIs
+Why: Learn modern web application communication
+
+# Email Client (SMTP/POP3)
+email_client.send('hello@example.com', 'Subject', 'Body')
+
+# File Transfer (FTP)
+ftp_client.upload('file.txt')
+
+# Remote Access (SSH)
+ssh_client.execute_command('ls -la')
+
+# Video Conferencing (SIP/WebRTC)
+video_call.start('user@domain.com')
+
+# Online Gaming (Custom protocols)
+game_client.connect_to_server()

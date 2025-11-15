@@ -1,0 +1,53 @@
+1. Network Scanner
+
+What: Discover devices on your local network
+Tools: Python, basic sockets
+Learning: IP addressing, subnetting, network discovery
+
+2. IP Subnet Calculator
+
+What: Calculate network ranges, broadcast addresses, etc.
+Tools: Any programming language
+Learning: CIDR notation, subnet masks, network math
+
+3. Traceroute Implementation
+
+What: Map the path packets take to a destination
+Tools: Python with scapy or raw sockets
+Learning: Routing, TTL, network hops
+
+4. Simple Packet Sniffer (IP Headers)
+
+What: Capture and analyze IP packet headers
+Tools: Python with socket library
+Learning: IP packet structure, protocol types, TTL
+
+5. NAT Simulation
+
+What: Simulate how Network Address Translation works
+Tools: Python
+Learning: Public vs private IPs, port translation
+
+6. Basic Router Simulation
+
+What: Create a simple routing table and forwarding logic
+Tools: Python
+Learning: Routing tables, next-hop decisions
+
+7. Distance Vector Routing Protocol
+
+What: Implement simplified RIP (Routing Information Protocol)
+Tools: Python, multiple threads/processes
+Learning: Dynamic routing, Bellman-Ford algorithm
+
+8. VPN Tunnel (IP-in-IP)
+
+What: Create a simple tunnel between two networks
+Tools: Python with sockets
+Learning: Tunneling, encapsulation, virtual networks
+
+9. Load Balancer with IP Forwarding
+
+What: Distribute traffic across multiple backend servers
+Tools: Python, iptables (Linux)
+Learning: Load balancing, health checks, forwarding

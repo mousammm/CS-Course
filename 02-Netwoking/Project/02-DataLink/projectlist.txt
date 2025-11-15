@@ -1,0 +1,50 @@
+1. Network Protocol Analysis with Wireshark
+    What: Capture and analyze real Ethernet frames
+    How: Install Wireshark (free), capture traffic, and examine:
+        MAC addresses in frame headers
+        Different frame types (ARP, Ethernet II)
+        Error detection mechanisms
+        Frame sizes and structure
+    Skills: You'll literally see Layer 2 in action!
+
+2. ARP Table Exploration
+    What: Play with Address Resolution Protocol (bridges Layer 2 and 3)
+    How: Use command line:
+    bash
+arp -a                    # View ARP table
+ping [IP]                # Generate ARP traffic
+arp -d *                 # Clear ARP cache (watch it repopulate)
+Learning: See how IP addresses map to MAC addresses
+
+3. Virtual Network Simulation
+    What: Create virtual networks to test Layer 2 concepts
+    Tools:
+        Cisco Packet Tracer (free with NetAcad account)
+        GNS3 (open source)
+    Projects:
+        Connect multiple virtual devices in a LAN
+        Observe MAC address tables in switches
+        Create and analyze VLANs
+
+4. Raspberry Pi Network Tap
+    Cost: ~$35 for Pi Zero + Ethernet adapter
+    What: Build a simple device that monitors network traffic
+    Learning: Understand how frames move through a physical network
+
+5. Managed Switch Exploration
+    Cost: Find a cheap used managed switch (~$20-50)
+    What: Configure and explore:
+        MAC address tables
+        VLANs (Virtual LANs)
+        Port security
+        Spanning Tree Protocol basics
+
+6. Simple Frame Generator
+    Language: Python with scapy library
+    What: Programmatically create and send custom Ethernet frames
+    Learning: Understand frame structure by building it yourself
+
+7. MAC Address Changer
+    What: Write a script to change your network interface's MAC address
+    Learning: Understand how MAC addressing works at the software level
+    Note: Only do this on your own test network

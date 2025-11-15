@@ -1,0 +1,44 @@
+# Error Control in Data Link Layer
+
+- If a frame is lost or corrupted during transmission, the receiver may not get the correct data,
+- and the sender may not know about it.
+- To handle this, protocols are used to detect errors and request retransmission.
+- This process, called ARQ (Automatic Repeat Request), resends the erroneous or missing frames until they are received correctly.
+
+# two ways of doing Error control
+
+    1 Error Detection:
+- Error detection, as the name suggests, simply means detection or identification of errors.
+- These errors may occur due to noise or any other impairments during transmission from transmitter to the receiver, in communication system.
+
+    2 Error Correction:
+- Error correction, as the name suggests, simply means correction or solving or fixing of errors.
+- It simply means reconstruction and rehabilitation of original data that is error-free.
+- But error correction method is very costly and very hard. 
+
+# various techniques of error control as given below :
+
+1. Stop-and-Wait ARQ:
+- In Stop-and-Wait ARQ, the sender transmits one data frame at a time and waits for an ACK (Acknowledgment) from the receiver.
+- If the ACK is not received within a time limit, the sender retransmits the frame.
+- Once the ACK is received, the sender sends the next frame.
+- This process continues until all frames are successfully delivered.
+
+2. Sliding Window ARQ:
+- This technique is generally used for continuous transmission error control.
+- It is further categorized into two categories as given below :
+
+2.1 Go-Back-N ARQ:
+- it's a type of Automatic Repeat Request (ARQ) protocol used in data transmission. In this method:
+- The sender can send multiple frames (up to a set window size) without waiting for an acknowledgment (ACK) from the receiver.
+- If a frame is lost or an error occurs, the sender goes back and retransmits that frame and all frames sent after it.
+- If there are no errors, it works just like a normal sliding window protocol.
+
+2.2 Selective Repeat ARQ: it's another type of ARQ protocol where:
+
+-Only the lost or damaged frames are retransmitted, not all the frames after the error (unlike Go-Back-N).
+-It is more efficient than Go-Back-N because it reduces unnecessary retransmissions.
+-The sender only resends frames for which a NAK (negative acknowledgment) is received.
+-Each frame must be acknowledged individually, which makes the system more complex, so it is used less often.
+
+The main difference between Go Back ARQ and Selective Repeat ARQ is that in Go Back ARQ, the sender has to retransmit the whole window of frame again if any of the frame is lost but in Selective Repeat ARQ only the data frame that is lost is retransmitted.

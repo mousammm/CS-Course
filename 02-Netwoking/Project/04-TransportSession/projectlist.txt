@@ -1,0 +1,39 @@
+layer 4 transport
+
+1. TCP Port Scanner
+
+What: Discover open ports on a target system
+Why: Learn sockets, ports, and TCP handshakes
+
+2. Simple TCP File Transfer
+
+What: Reliable file transfer with ACK system
+Why: Understand TCP reliability in practice
+
+3. UDP vs TCP Performance Tester
+
+What: Compare speed vs reliability tradeoffs
+Why: Understand when to use each protocol
+
+layer 5 session
+
+1. Resumable Chat Application
+
+What: Chat app that survives disconnections
+Why: Learn session management, checkpoints, recovery
+
+2. Session-Based Web Login System
+
+What: User authentication with session timeouts
+Why: Learn session establishment, maintenance, termination
+
+3. Download Manager with Resume Capability
+
+What: File download that can resume after interruption
+Why: Learn checkpointing and recovery in data transfer
+
+# TCP three way handshake
+
+- Client: SYN (seq=x)        → "Can we talk? My first byte will be #x"
+- Server: SYN-ACK (seq=y, ack=x+1) → "Sure! My first byte will be #y, I expect #x+1 next"
+- Client: ACK (ack=y+1)      → "Great! I expect #y+1 next"

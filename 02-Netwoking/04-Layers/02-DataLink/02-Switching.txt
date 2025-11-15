@@ -1,0 +1,32 @@
+Switching | Computer Networks
+
+- Switching is the process of transferring data packets from one device to another within the same network or across networks using switches.
+
+# Network Switching
+
+- Network Switching is a specific type of switching, used in computer networks.
+- It is about transferring data packets from one device (node) to another across a network.
+
+It involves the following steps:
+- Frame Reception: Switch receives a frame from a device.
+- MAC Address Extraction: Reads the destination MAC address from the frame.
+- Lookup: Searches its switching table for the destination MAC address.
+- Forwarding: If found, sends the frame to the correct port. If not found, uses flooding (sends to all ports except incoming one).
+- Table Update: Learns new MAC addresses and updates the table for future forwarding.
+- Frame Transition: Forwards the frame to the correct device/network
+
+# Types of Switching
+
+There are three types of switching methods:
+    Message Switching
+    Circuit Switching
+    Packet Switching
+
+# Virtual LAN (VLAN)
+
+- A Virtual Local Area Network (VLAN) is a logical segmentation of a Layer 2 (Data Link Layer)
+- network that enables devices to be grouped together regardless of their physical location.
+- Unlike traditional LANs that rely on physical topology, VLANs are implemented in switches using IEEE 802.1Q VLAN tagging.
+
+    - Same VLAN: Devices can communicate directly within the VLAN.
+    - Different VLANs: Communication requires Inter-VLAN Routing (using a router or Layer 3 switch).

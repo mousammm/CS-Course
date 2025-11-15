@@ -1,0 +1,19 @@
+1. Universal Chat Application with Encoding Support
+
+What: Chat app that handles different languages and emojis seamlessly
+Why: Learn character encoding, encryption, and data representation
+
+2. Cross-Platform Data Exchange Tool
+
+What: Convert data between JSON, XML, and Protocol Buffers
+Why: Learn how different systems exchange data formats
+
+3. Smart Compression Proxy
+
+What: Automatically compress data based on content type
+Why: Learn how Layer 6 optimizes network usage
+
+4. Multi-Format Configuration Manager
+
+What: Read/write config files in different formats seamlessly
+Why: Learn how applications handle different file formats

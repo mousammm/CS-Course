@@ -1,0 +1,34 @@
+# Physical Layer in OSI Model
+
+- The physical Layer is the bottom-most layer in the Open System Interconnection (OSI) Model,
+- responsible for the physical and electrical transmission of data.
+- It consists of various network components such as power plugs, connectors, receivers, cable types, etc.
+- The physical layer sends data bits from one device(s) (like a computer) to another device(s). 
+
+# Functions of Physical Layer
+
+-  The Physical Layer is responsible for sending raw data as bits over a physical medium.
+- It converts data into signals that can travel through wires, fiber optics, or wireless channels (encoding) and turns these signals back into data at the receiver (decoding).
+- It ensures signals are transmitted correctly and uses techniques like modulation to prepare the data for transmission and demodulation to retrieve it at the other end.
+- This layer also decides how data flows (one-way, two-way alternately, or simultaneously) through transmission modes and controls the speed and timing of data transmission to keep everything running smoothly.
+
+# Physical Topologies
+
+- Physical topologies describe the physical arrangement of devices and cables in a network.
+- Below are the different topologies used in Computer Networks
+
+# Line Configuration 
+
+    Point-to-Point configuration: In Point-to-Point configuration, there is a line (link) that is fully dedicated to carrying the data between two devices.
+
+    Multi-Point configuration: In a Multi-Point configuration, there is a line (link) through which multiple devices are connected. 
+
+# Protocols in Physical Layer
+
+- Typically, a combination of hardware and software programming makes up the physical layer.
+- It consists of several protocols that control data transmissions on a network.
+
+    Ethernet (IEEE 802.3) : Widely used for wired networks.
+    Wi-Fi (IEEE 802.11) : For wireless communication.
+    Bluetooth (IEEE 802.15.1) : Short-range wireless communication.
+    USB (Universal Serial Bus) : For connecting devices over short distances
