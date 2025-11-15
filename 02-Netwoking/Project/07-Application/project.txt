@@ -23,12 +23,6 @@ Why: Understand how DNS works
 What: Interact with web APIs
 Why: Learn modern web application communication
 
-# Email Client (SMTP/POP3)
-email_client.send('hello@example.com', 'Subject', 'Body')
-
-# File Transfer (FTP)
-ftp_client.upload('file.txt')
-
 # Remote Access (SSH)
 ssh_client.execute_command('ls -la')
 

@@ -1,0 +1,23 @@
+int s = socket(AF_INET,SOCK_STREAM,0);  = it return 3 
+
+The File Descriptor Sequence:
+Your program starts with 3 standard FDs already open:
+FD 1: stdout  (already open when program starts)
+FD 2: stderr  (already open when program starts)
+FD 3: your socket ← Next available!
+
+When you create new resources (sockets, files, pipes), the OS gives you the next available number:
+if FD 3 was higher, it would mean you already opened other resources
+Resource management: Each FD represents a system resource
+
+Creates a real socket object in kernel memory
+Finds the first empty slot in YOUR program's table
+Puts the socket in that slot
+Returns the slot number (3) to you
+
+Now when you say:
+bind(s, ...);     // OS looks in slot 3 to find the real socket
+listen(s, ...);   // OS looks in slot 3 to find the real socket  
+accept(s, ...);   // OS looks in slot 3 to find the real socket
+
+

@@ -17,6 +17,7 @@ DEV APPS-
 - Rufus 
 
 # Windows 
+- Atlas Os 
 - GlazeWM 
 - Everthing by void (better search)
 - Oracal Virtual Box 
