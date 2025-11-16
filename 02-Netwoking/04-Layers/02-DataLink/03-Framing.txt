@@ -1,9 +1,0 @@
-# Framing in Data Link Layer
-
-- A frame consists of a sequence of bits organized into a structured block that conveys data along with control information such as addressing and error detection codes.
-- dividing the continuous stream of bits into manageable, meaningful chunks that can be reliably transmitted and processed by the receiver.
-
-Types of Framing
-
-1. Fixed-Size Framing
-2. Variable-Size Framing

@@ -1,0 +1,50 @@
+# Protocols - set of used by 2 devices to communicate 
+- every protocol have predefine headers 
+- which define how a message should be
+- details of the message 
+
+SENDER - attaches header 
+RECEIVER - processes the header
+
+NOTE: All protocol are implemented in certain layer 
+
+# How to manage Protocols > Layering > organised these protocols
+
+OSI model - theoritical
+- Application     http
+- Presentation    http + h
+- Session         http + h + h
+- Transport       http + h + h + h
+- Network         http + h + h + h + h
+- Data link       http + h + h + h + h + h
+- Physical        0 and 1
+
+- Data link layer can be understand by receiver DLL
+- receiver processes the dll of sender and pass the process data to upper layer
+- this is called encapsulation
+
+- physical layer: sharing of bits 0s 1s 
+- data link layer: one device to one device communication
+- Network: for connection of device not directly connected to you
+    OSI:It may provide relible and un reliable services
+    TCP/IP:It provide unreliable services
+
+- Transport: 
+    network layer sends data from one device to other
+    but they might be running diff processes
+    cmpt might be running the browser, email, remoteLogin
+    transport layer: which process should be receiving these info 
+
+- Session: it does session management, authentacition
+    combining of diff steames 
+    audio video img all in one
+
+- Presentaion: data compression/encoding/decoding/encription/decription
+- Application: Run browser all other things
+
+TCP/ip - used
+                                              PDUs
+- link layer: Physical + data link          Frames      Wifi/Ethernet
+- network: unreliale, uses IP protocol      Packets     IP
+- Transport: UDP/TCP                        Segment     TCP
+- Application: Browsers etc                 Message     http

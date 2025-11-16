@@ -1,0 +1,104 @@
+# Physical Layer in OSI Model
+
+- The physical layer has one job:
+- to transmit a stream of raw,
+- unstructured bits from one device to another.
+
+It is not responsible for:
+    What the bits mean.
+    If they are in the correct order.
+    If some bits are missing.
+    The source or destination of the bits.
+
+Its only concern is with the physical connection and the representation of the 1s and 0s on the medium.
+
+# Functions of Physical Layer
+
+-  The Physical Layer is responsible for sending raw data as bits over a physical medium.
+- It converts data into signals that can travel through wires, fiber optics, or wireless channels (encoding) and turns these signals back into data at the receiver (decoding).
+- It ensures signals are transmitted correctly and uses techniques like modulation to prepare the data for transmission and demodulation to retrieve it at the other end.
+- This layer also decides how data flows (one-way, two-way alternately, or simultaneously) through transmission modes and controls the speed and timing of data transmission to keep everything running smoothly.
+
+# Physical Topologies
+
+1. Representation of Bits (Signaling)
+
+- This is the most fundamental question:
+- How do you represent a '1' and a '0' in the physical world?
+- The answer is by creating a signal with a specific property that can be changed.
+- This is called modulation.
+
+Electrical Voltage (Copper Wires):
+  - +5 volts might mean a 1.
+  - -5 volts might mean a 0.
+  - Example: Ethernet over twisted-pair cable.
+
+Light Pulses (Fiber Optics):
+  - Presence of light (LED or Laser on) means a 1.
+  - Absence of light (LED or Laser off) means a 0.
+  - Example: Fiber optic internet connections.
+
+Radio Waves (Wireless):
+  - Changes in the phase, frequency, or amplitude of the radio wave represent 1s and 0s.
+  - A specific frequency shift might mean a 1, while another means a 0. This is how Wi-Fi and Bluetooth work.
+
+Microwaves (Satellite): Similar to radio, but at higher frequencies.
+
+#. Physical Components & Hardware
+
+- Network Interface Card (NIC): 
+- Wireless Access Point (WAP): 
+- Repeaters and Hubs: 
+- Hub 
+
+# line configuration 
+
+-point-to-point configuration:c arrying the data between two devices.
+-multi-point configuration: multiple devices are connected. 
+
+# Transmission Mode (Duplex)
+
+ - Simplex: One-way communication only (e.g., a keyboard to a computer, a traditional TV broadcast).
+ - Half-Duplex: Two-way communication, but only one direction at a time (e.g., a walkie-talkie, old hub-based networks).
+ - Full-Duplex: Two-way communication simultaneously (e.g., a telephone conversation, a modern switch-based network).
+
+# Types of Network Topology
+
+- Layer on is just connection of 2 device 
+- here we see how diff device can be connected
+
+% Physical Topology: The actual physical layout of cables and devices.
+% Logical Topology: How data moves across the network, regardless of physical layout.
+
+1 P Topology
+2 Mesh Topology - protocols AHCP, DHCP
+3 Star Topology - hubs 
+4 Bus Topology - MAC address > lan ethernet connnection like > TDMA, CDMA
+5 Ring Topology
+6 Tree Topology - protocols DHCP, SAC
+7 Hybrid Topology
+
+# protocols in physical layer
+
+- the classic osi model can be a bit misleading here.
+- unlike higher layers (like tcp/ip or http)
+- the physical layer (layer 1) doesn't have "protocols"
+- in the same sense of structured packets with headers and data that make decisions.
+
+think of it this way:
+    a protocol like tcp has a "conversation" ("i got your packet," "please resend that," "we're closing the connection").
+
+    a physical layer standard is more like the laws of physics for the connection: "a '1' will be represented by a light pulse of this specific wavelength lasting exactly 0.0000001 seconds."
+
+so, the "protocols" you're looking for are these official standards. let's dive into the major ones.
+
+    ethernet (ieee 802.3) : widely used for wired networks.
+    wi-fi (ieee 802.11) : for wireless communication.
+    bluetooth (ieee 802.15.1) : short-range wireless communication.
+    usb (universal serial bus) : for connecting devices over short distances
+
+the physical layer is this combination of:
+- functions: bit representation, synchronization, physical topology, transmission mode.
+- components: nics, cables, connectors, repeaters, hubs.
+- standards/protocols: ieee 802.3 (ethernet), ieee 802.11 (wi-fi), dsl, sonet/sdh, usb.
+- Deep Technical Concepts: Clock recovery, baseband vs. broadband, multiplexing (FDM, TDM, WDM), and the difference between line coding and modulation.

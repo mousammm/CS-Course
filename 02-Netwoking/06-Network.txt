@@ -1,0 +1,111 @@
+#1 Network layer
+
+Switch > Router > Internet > Server
+Router and Internet are a part of Autonomous sustem(ISP)
+
+- Network layer routes packets from source to destination within or outside a subnet
+- Two different subnet may have different addressing schemes or non-compatible addressing types.
+- Same with protocols, two different subnet may be operating on different protocols 
+- Network layer has the responsibility to route the packets from source to destination, mapping different addressing schemes and protocols.
+- Data from the transport layer is encapsulated into packets, with source and destination IPs attached.
+
+- Network address is always configured on network interface card 
+- and is generally mapped by system with the MAC address
+
+#2 Protocols 
+- Address Resolution Protocol(ARP)
+- Dynamic Host Configuration Protocol(DHCP)
+- Internet Protocol(IP)
+
+#3 Function
+- Internetworking
+- Addressing 
+- Routing and Forwarding 
+- Scability(using hirerchy in networks)
+- Bandwidth control
+- Fragmentation and Re-assembly
+
+#4 circuit switching and packet switching
+- network layer TCP/IP model uses > packet switching > datagram
+- data is always divided into packets 
+
+$ circuit switching - thery concept / used in telephone  networks
+- establish a connection 
+- used that conection
+- close that connection
+- bandwidth is allocated which is used in connection making
+- and release that bandwidth
+
+$ Packet switching
+- divide ur input data into multiple packet
+- and these packet go through multiple router 
+- routers use store and forward switching 
+- and that utilize the bandwidth more efficiently
+- and is called statistical multiplexing
+  $.1 Virtual circuit
+    Connection required
+    Routing happen per connection
+    Packets have circuit identificaton
+    Faliurs are difficult to handle
+    quality of service is easy to add
+  $.1 DataGram
+    Connection not required
+    Routing happen per circuit
+    Packets have destination address
+    Faliurs are easy to handle
+    quality of service is difficult to gurantee
+
+#5 Classful Addressing
+- ip/ipv4 are 32 bit address
+- 2^32 address 4.3 billion
+  cider
+  classless addressing
+  net 
+
+CLASS A: begins with 0
+  8bits for network (2^7 total network)
+  24bits for host (there are 2^24 - 2)
+  
+  10.0.0.0 - firt address in this particular address
+  10.255.255.255 - firt address in this particular address
+  110.0.0.0 - firt address in this particular address
+  
+  RANGE: 0.0.0.0 to 127.255.255.255
+
+CLASS B: begins with 10
+  16bits for network (2^14 total network)
+  16bits for host (there are 2^16 - 2)
+  
+  RANGE: 128.0.0.0 to 191.255.255.255
+
+CLASS C: begins with 110
+  24bits for network (2^21 total network)
+  8bits for host (there are 2^8 - 2)
+  
+  RANGE: 192.0.0.0 to 223.255.255.255
+
+CLASS D: begins with 1110 RANGE: 224.0.0.0 to 239.255.255.255
+CLASS E: beigns with 1111 RANGE: 240.0.0.0 to 255.255.255.255
+
+#5.1 NAT(Network Address Translation)
+
+Class C networks is been used 
+- ISP provides you a wifi access point with the router 
+- devices at home get class c address
+
+- laptop1 192.0.0.1
+- laptop2 192.0.0.2                |                  |
+- laptop3 192.0.0.3      private <-| router 182.23.2.1 |-> public   -----> Internet 
+- laptop4 192.0.0.4                | NATBOX change    |
+- laptop5 192.0.0.5                | private-> public |
+
+#6 Subnetting
+
+- Subnetting is the process of dividing a large network into smaller networks called subnets.
+- Each subnet provides its own space for devices to communicate, improving network performance, security, and management.
+
+- With Subnetting, we split the network into three subnets, 
+      device    IPs Allocated (after subnetting)
+Sales	20	32 (192.168.1.0/27)
+HR	10	16 (192.168.1.32/28)
+IT	50	64 (192.168.1.48/26)

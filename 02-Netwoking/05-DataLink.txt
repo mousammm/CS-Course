@@ -1,0 +1,78 @@
+
+It take a packet from network layer 
+adds its own header & trailer
+create a Frame 
+frame is send to physical layer
+
+# Sub-Layers of The Data Link Layer
+- Logical Link Control (LLC): It deals with protocols, flow-control, and error control
+- Media Access Control (MAC): It deals with actual control of media
+
+# DLL is implemented in NIC > every NIC has a MAC ADDRESS > OS provides drivers for NIC
+# MAC Address (media access control)
+- A MAC address is a 48 or 64-bit address associated with a network adapter
+- first half (24 bits) ID number of the adapter manufacturer
+- second half (24 more bits) represents the serial number assigned to the adapter by the manufacturer
+
+# Protocols in Data link layer
+- Synchronous Data Link Protocol (SDLC)
+- High-Level Data Link Protocol (HDLC)
+- Serial Line Interface Protocol (SLIP)
+- Point to Point Protocol (PPP)
+- Link Access Procedure (LAP)
+- Link Control Protocol (LCP)
+- Network Control Protocol (NCP)
+
+# Devices Operating at the Data Link Layer
+1. Switch
+2. Bridge
+3. Network Interface Card (NIC)
+4. Wireless Access Point (WAP)
+5. Layer 2 Switches
+
+# Applications of Data Link Layer
+- Local Area Networks (LANs)
+- Wireless Networks (Wi-Fi)    
+- Switches and MAC Addressing
+- Point-to-Point Connections
+
+# Function
+
+  % Framing
+    - byte stuffing  used
+    - Bit stuffing
+  
+  % Error detection 
+    - Parity
+    - CheckSum
+    - CRC used
+  
+  % Flow Control & error control
+    Automatic Repeat Request
+    - stop and wait       |
+    - Go back n           |- SLIDING WINDOW
+    - selective repeat    |
+  
+  % Multiple Access
+    - ALOHA
+    - CSMA/CD  used
+
+# Transmission delay: time taken by sender to put data packet on channel  
+# Propogation delay: time taken by the last bit of data packet to reach receiver 
+# Queuing Delay: time it waits in a queu
+# Processing delay: encription decritpion
+
+# Error and flow control
+
+happen in dll and trans layer 
+dll: device are close to each other speed/bandwidth is high
+transport: speed/bandwidth may vary aq to link too much delay
+
+Why do these layer need error contorl
+- transport layer works on top of IP
+- IP is connection less not reliable 
+- So the TCP has to ensure that these pkt of ip layer go in particular order and if loss it should handle apporptialy
+
+- dll works on top of physical layer 
+- physical layer might cause some damages to bits 
+- it happen a lot in wireless

@@ -1,0 +1,61 @@
+# What is OSI Model? 7 layers 
+
+- its more of a theoritical layer 
+- higher layer dont worry about down layer 
+
+- The OSI (Open Systems Interconnection) Model is a set of rules that explains how different computer systems communicate over a network.
+- OSI Model was developed by the International Organization for Standardization (ISO).
+- The OSI Model consists of 7 layers and each layer has specific functions and responsibilities.
+- This layered approach makes it easier for different devices and technologies to work together
+
+# Layers of the OSI Model
+
+% Physical Layer
+% Data Link Layer
+  Sublayers of Data Link Layer
+    Logical Link Control (LLC)
+    Media Access Control (MAC)
+  Functions of the Data Link Layer
+    - Framing
+    - Physical Addressing 
+    - Error Control 
+    - Flow Control
+    - Access Control
+
+% Network Layer
+  Functions of the Network Layer
+    - Routing
+    - Logical Addressing
+
+% Transport Layer
+  Functions of the Transport Layer
+    Segmentation and Reassembly
+    Service Point Addressing
+  Services Provided by Transport Layer
+    Connection-Oriented Service
+    Connectionless Service
+
+% Session Layer
+  Functions of the Session Layer
+    - Session Establishment, Maintenance, and Termination: The layer allows the two processes to establish, use, and terminate a connection.
+    - Synchronization: This layer allows a process to add checkpoints that are considered synchronization points in the data. These synchronization points help to identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely, and data loss is avoided.
+    - Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full duplex. 
+
+% Presentation Layer
+  Functions of the Presentation Layer
+    - Translation: For example, ASCII to EBCDIC.
+    - Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext, and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.
+    - Compression: Reduces the number of bits that need to be transmitted on the network. 
+
+% Application Layer
+  Functions of the Application Layer
+    - Network Virtual Terminal (NVT): It allows a user to log on to a remote host.
+    - File Transfer Access and Management (FTAM): This application allows a user to access files in a remote host, retrieve files in a remote host, and manage or control files from a remote computer.
+    - Mail Services: Provide email service.
+    - Directory Services: This application provides distributed database sources and access for global information about various objects and services
+
+# How Data Flows in the OSI Model?
+
+- When we transfer information from one device to another, it travels through 7 layers of OSI model.
+- First data travels down through 7 layers from the sender's end and then climbs back 7 layers on the receiver's end.
+- Data flows through the OSI model in a step-by-step process:
