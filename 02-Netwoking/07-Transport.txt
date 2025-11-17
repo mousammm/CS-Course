@@ -1,0 +1,70 @@
+# Transport layer
+
+- ur web server might be running diff processes
+- and ur cmpt might be doing different things 
+- there are multiple application running 
+
+- It provides process to process communication 
+- Port Numbers
+
+- Network layer makes sure packet reach webserver
+- but which process is going to consume this packet > handed by TL
+
+PORT NOS: 16 unsinged int 
+- o to 1024 
+80 HTTP
+443 HTTPS
+53 DNS
+22 SSH
+110 POP3
+25 SMTP
+
+- TL is implemented in the os 
+- os provide the facility to have port no 
+- and these lib they provide lib fun useing the sys calls of os 
+- bind asscept socket all these are provided by the os > these are part of the TL
+
+# TL PROTOCOLS
+TCP / UDP
+UDP: wrapper over the ip protocol
+
+# TCP connection oritented protocol 
+- when browsing some website 
+- using internet layer > TCP on top > u make a TCP connection
+- And this connection happens using socket api
+
+# web server 
+- socket() creates a socket = ip address + port no
+- binds() the socket to a port no
+- listen() using it shows its willing ness to accept connections
+- accept() to accept connection (infinite loop)
+
+Browsr site 
+- socket() create a socket when it wants to create a connection to a webserver
+- connect() when is been accept down in accept of webserver 
+- now browser and webserver is connected using TCP connection
+- AND this connection is 3 way handshake
+- once connection establish they both 
+    - read()
+    - write()
+
+- close()
+
+# 3-Way Handshake
+
+The 3-Way Handshake ensures both client and server are ready before data transmission begins:
+
+Step 1: SYN → (Client → Server)
+    Client sends a TCP segment with SYN=1, including its ISN (Initial Sequence Number).
+    Marks the request to initiate a connection
+
+Step 2: SYN‑ACK ← (Server → Client)
+    Server replies with SYN=1 & ACK=1, containing its own ISN and ACK = client_ISN + 1.
+    Confirms receipt of client’s SYN and initiates its own sync 
+
+Step 3: ACK → (Client → Server)
+    Client sends an ACK=1 segment with ACK = server_ISN + 1.
+    Completes synchronization; connection enters ESTABLISHED state
+
+# TCP header 
+# UPD header

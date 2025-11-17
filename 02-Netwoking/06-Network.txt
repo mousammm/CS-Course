@@ -104,8 +104,112 @@ Class C networks is been used
 - Subnetting is the process of dividing a large network into smaller networks called subnets.
 - Each subnet provides its own space for devices to communicate, improving network performance, security, and management.
 
-- With Subnetting, we split the network into three subnets, 
-      device    IPs Allocated (after subnetting)
-Sales	20	32 (192.168.1.0/27)
-HR	10	16 (192.168.1.32/28)
-IT	50	64 (192.168.1.48/26)
+SUBNET MASK: sequence of 1s followed by 0s (32bit)
+- 1s representedd the network address
+- 0s for host
+
+255.0.0.0 - 8bits for network address
+255.255.0.0 - 16bits for network address
+
+EXAMPLE:
+CLASS C: Network ID (24bits) | Host (8bit)
+193.8.2.0
+193.8.2.255
+
+a b c d 
+- we want to set up 4 sub network
+- in subnetting we take some bits from host id > increase network id
+- we have 4 div we will take 2bit
+- CLASS C: Network ID (26bits) | Host (6bit)
+- a(00) 192.8.2.0  (00000000) to ... 63(00111111) router \ 
+- b(01)        .64 (01000000) to ...127(01111111) router |- Gateway
+- c(10)        .128(10000000) to ...191(10111111) router |- Router
+- d(11)        .192(11000000) to ...255(11111111) router /
+
+SUBNET MASK: 
+ <-- ------ 26bits ------- --><-6-->
+ 11111111.11111111.11111111.11000000  =  255.255.255.192
+   
+- here if we didnt div we have 256 - 2 no of address
+- but now each have individual start and broadcast 265 - (4x2) 
+
+Variable length subnetting:
+same take 2bits from host
+   |- a  00
+ip |- b  10
+   |_/-c 0
+     \-d
+
+#7 CIDR(CLassless inter domain routing)  = classfull + subnetting
+
+CLass A: 1byte Network ID
+CLass B: 2byte Network ID
+CLass 3: 3byte Network ID
+
+CIDR: Boundaries in Bits for Network ID
+
+23 bits Netwirk ID
+9 bits Host 
+                     <--9bit-->
+193.2.10.0    -> ...10.00000000
+193.2.11.255  -> ...11.11111111
+
+SUBNET MASK: 255.255.254.0 -> 1111-1111.1111-1111.1111-1110.0000-0000
+ALT WAY > CIDR NOTATION : 193.2.10.1/23
+
+1.SUBNET MASK: 11.....1.000....0
+              nbits     32-n
+nbits: Network identification
+32-n: Host identification
+
+2. Total available IPs in this network with a subnet mask of n bits = 2^32-n
+3. total available ips = 2^32 - 2
+4. All ips will have n bits as same
+5. 1st ips address will have 32-n bits as 0s (For Network identification)
+6. last ips addres will have 32-n bits as 1s (For Broad casting)
+
+#8 More on Subnetting
+
+1. we need to set up its IP address
+2. Gateway > device connected to the internet > and this make our device connect to the internet 
+3. Set DNS server 
+4. Subnet mask
+
+These we set up for every device 
+which is connected to a network 
+And through these network its connected to internet 
+
+Now days we have DHCP which auto setup these things
+
+#10 ARP(Address resolution Protocol): Used to get MAC address of a given IP address
+
+#11 Routing  Algo (background)
+
+IPS airtel    ---|
+ISP Jio       ---|
+ISP NuraLink  ---|
+
+% Static 
+% Dynamic
+    Exterior Gateway Protocol: used to route isps
+    Interior Gateway Protocol: used to route inside isps
+      i/Distance Vector
+        RIP, EIGRP
+      i/Link State 
+        IS-IS, OSPF
+
+Unicast: one source one destinnation
+
+Q/ How do we decide cost od links?
+Bandwidth
+Network Delay
+Hop Count
+Path Cost
+Load
+Maximum Transmission Unit
+
+
+
+
+
+
