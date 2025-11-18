@@ -1,0 +1,13 @@
+# Variables in C
+
+- a named piece of memory which is used to store data 
+- and access it whenever required. 
+- It is important to initialize a variable it only contains garbage value when it is declared. 
+- When a variable is declared, the compiler is told that the variable with the given name and type exists in the program.
+- But no memory is allocated to it yet. Memory is allocated when the variable is defined.
+
+int num = 10;
+
+- store a value of 10 in memory
+- we can access it by num
+- int = how much size num can hold

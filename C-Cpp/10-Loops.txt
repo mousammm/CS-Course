@@ -1,0 +1,6 @@
+entry control
+	for
+	while
+
+exit control
+	do while 

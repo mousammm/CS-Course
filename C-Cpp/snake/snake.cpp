@@ -161,9 +161,22 @@ void logic() {
         bool validPosition;
         do {
             validPosition = true;
-            fruitX = rand() % wallWidth;
-            fruitY = rand() % wallHeight;
-            
+            //fruitX = rand() % wallWidth;
+            //fruitY = rand() % wallHeight;
+            if(dir == UP){
+                fruitX = headX;
+                fruitY = headY - 1;
+            } else if(dir == RIGHT){
+                fruitX = headX + 1;
+                fruitY = headY;
+            } else if(dir == LEFT){
+                fruitX = headX - 1;
+                fruitY = headY;
+            } else {
+                fruitX = headX;
+                fruitY = headY + 1;
+            }
+           
             // Check if fruit spawns on snake head
             if (fruitX == headX && fruitY == headY)
                 validPosition = false;

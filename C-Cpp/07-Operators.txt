@@ -1,0 +1,29 @@
+- They are symbols that represent some kind of 
+- operation, such as mathematical, relational, bitwise, conditional, or logical computations,
+-  which are to be performed on values or variables.
+-  The values and variables used with operators are called operands.
+
+
+Unary Operators: Operators that work on single operand.
+Example: Increment( ++ ) , Decrement( -- )
+
+Binary Operators: Operators that work on two operands.
+Example: Addition ( + ), Subtraction( - ) , Multiplication ( * )
+
+Ternary Operators: Operators that work on three operands.
+Example: Conditional Operator( ? : ) 
+
+Types of Operators in C
+
+Arithmetic Operators
+Relational Operators
+Logical Operator
+Bitwise Operators
+Assignment Operators
+sizeof Operator
+Comma Operator ( , )
+Conditional Operator ( ? : )
+dot (.) and arrow (->) Operators
+Cast Operators
+addressof (&) and Dereference (*) Operators
+  -> Operator Precedence and Associativity 

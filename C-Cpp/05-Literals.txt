@@ -1,0 +1,3 @@
+Literals in C
+
+In C, Literals are the constant values that are assigned to the variables.

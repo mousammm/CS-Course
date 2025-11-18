@@ -1,0 +1,27 @@
+# Data Type (int num = 10;)
+
+- int tell what kind of data num is holding 
+- it 
+
+		Basic Data Type (int/float/double/char/bool/void)
+Data Type C     Derived Data Type (array/pointer/function)
+		User Defined Data Type (Union/struct/enum)
+
+# int(4bytes) %d
+	1bytes  =  8bit                    
+	4bytes  =  4x8bit      (32)        
+	2^32    =  4294967296              
+	2^32/2  =  2147483648
+	(-2147483648-2147483648)
+
+#  char    (1bytes)  %c
+#  float   (4bytes)  %f
+#  double  (8bytes)  %lf
+#  void    (nooooo)  lol
+
+# sizeof(int) to know the size of data types
+
+- long, short, signed and unsigned are datatype modifier 
+- used with some primitive data types to change the size or length
+
+
