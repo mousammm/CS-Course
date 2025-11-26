@@ -1,0 +1,75 @@
+Needed:
+	nerd font 
+	ligatures 
+
+Core:
+	dwm,bar-inbuilt (windowMgr)
+	st (terminal)
+	picom          # Compositor for transparency and effects
+	dmenu (pop up)
+	sxiv (image viewer)
+	feh (wallaper changer)
+	pywall (image color extract)
+	ncmpcpp - MPD (music player)
+	htop (sys monitoring)
+
+	notificaton daemon
+	mail
+	scrnt 
+	video player (vlc)
+	recoring (obs)
+
+	nitrogen       # Wallpaper setter
+	arandr        # GUI for screen layout
+	xorg-xsetroot # For setting root window properties
+
+
+coding:
+	git
+	tmux (multiplexer)
+	vim  (editor)
+	yazi (file mgr)
+
+shell:
+	eza
+	zoxide
+	fxf
+
+Script:
+	select wifi | dmenu 
+	wallpaper | feh | sxiv
+	sound 
+	bluetooth
+	auto detect mnt [usb/otg]
+
+$ pacman -S Syu
+$ pacman -S git vim stow
+
+COMPILATION:
+	sudo pacman -S base-devel git libx11 libxft libxinerama freetype2
+TO RUN DWM:
+	sudo pacman -S xorg-xinit xorg-server xorg-xsetroot
+
+# Create a directory for suckless software
+$ mkdir ~/dotfiles/suckless
+$ cd ~/dotfiles/suckless
+  git clone https://git.suckless.org/dwm
+	cd dwm
+	sudo make clean install
+  git clone https://git.suckless.org/dmenu
+	cd ../dmenu  
+	sudo make clean install
+  git clone https://suckless.org/st
+	cd ../st
+	sudo make clean install
+
+$ echo "exec dwm" > ~/dotfiles/.xinitrc
+$ startx
+
+//TODOS:
+[ ] setup st 
+[ ] set up bashrc
+[ ] git 
+[ ] vim
+[ ] tmux
+[ ] demenu 

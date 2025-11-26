@@ -1,0 +1,69 @@
+#1 INTERNET
+Ethernet:
+	$ ip -a
+	$ ping 1.1.1.1
+	$ ip link set eno1 down (down ethernet)
+
+Wifi:
+	$ iwctl device list (list availabel wifi)
+	$ iwctl device wlan0 set-property Powered off/on
+	$ iwctl station wlan0 scan (scan for network)
+	$ iwctl station wlan0 get-networks (list the scan networks)
+	$ iwctl station wlan0 connect <network_name>
+	$ iwctl station wlan0 show
+	
+#2 fdisk
+$ fdisk -l (/dev/[sda/nvme0n1])
+$ fdisk /dev/[sda/nvme0n1])
+$ p (print) 
+$ n (new partition) 
+	part   number     1st sec   last sec
+	1      default    default   +512M	
+	2      default    default   default
+$ w (write and exit)
+	
+#3 archinstall
+
+& Mirrors > Mirrors region > India 
+& Disk config > Partitioning > manual partition > /dev/[sda/nvme0n1]
+			    +512M    rest 
+	Assign Mountpoint   /boot    /
+	Format		    yes      yes
+	Change Filesystem   fat32    ext4
+
+& Disk encryption 
+	encryption type > LUKS
+	encryption pass > dpass
+	partition 	> /
+
+& Swap > True
+& Bootloader > Grub
+& Hostname > arch 
+& Root pass > rpass
+& User account 
+	name 	   > mousam 
+	pass	   > pass
+	super user > yes 
+
+& Gpu deiver > Amd 
+& Audio > pipewire
+& Network Config > Network Manager
+& Timezone > Asia/Kolkata 
+& Automatic timezone > Yes
+INSTALL
+
+#4 chroot in newly created installition
+
+$ efibootmgr
+$ grub-install --target=x86_64-efi --efi-directory=/boot --recheck 
+BIOS > SET > GRUB[1]
+$ pacman -S os-prober  
+$ vim /etc/default/grub
+UNCOMMENT: GRUB_DISABLE_OS_PROBER=false
+$ os-prober (found windows)
+$ grub-mkconfig -o /boot/grub/grub.cfg  (create a new grub config)
+
+## Arch auto install
+
+# From a running Arch system
+$ archinstall --config my_config.json --creds my_creds.json
